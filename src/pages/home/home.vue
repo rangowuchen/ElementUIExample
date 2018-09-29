@@ -1,9 +1,3 @@
-<style lang="scss" scoped>
-a {
-  margin: 10px;
-}
-</style>
-
 
 <template>
     <div>
@@ -46,3 +40,8 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+a {
+  margin: 10px;
+}
+</style>
