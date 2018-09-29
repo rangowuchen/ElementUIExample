@@ -1,0 +1,180 @@
+@import "./var.scss";
+.characterSpan{
+  border-radius: 6px;
+    border: solid 1px #14b414;
+    padding: 3px 9px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  line-height: normal;
+}
+.organization {
+  display: flex;
+  height: 100%;
+  &>section:nth-child(1) {
+    width: 30%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    overflow-y: auto;
+    .left-head {
+      padding: 15px;
+      span:nth-child(1) {
+        position: relative;
+        top: -2px;
+        font-size: 12px;
+        padding: 6px 12px;
+        background-color: #eafcea;
+        border: 1px solid $at-green;
+        border-radius: 6px;
+      }
+      span:nth-child(2) {
+        font-size: 18px;
+        color: $at-gray;
+        margin-left: 15px;
+      }
+      span:nth-child(3) {
+        color: $at-green;
+        cursor: pointer;
+      }
+    }
+    .left-tree {
+      margin-left: 20px;
+      font-size: 16px;
+      color: $at-gray;
+    }
+  }
+  &>section:nth-child(2) {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow-y: auto;
+    height: 100%;
+    .right-head {
+      padding: 15px 10px;
+      font-size: 16px;
+      color: #000;
+      .active {
+        color: $at-gray;
+      }
+    }
+
+    .fin-condition {
+      .button {
+        padding: 0px 10px 0;
+        margin: 0px auto 0;
+      }
+
+    }
+  }
+}
+
+.dialog {
+  .radios {
+    width: 240px;
+    text-align: center;
+  }
+  width: 100%;
+  &-base {
+    display: flex;
+    &-one {
+      width: 50%;
+      &-block {
+        display: flex;
+        margin-top: 2px;
+        align-items: center;
+        justify-content: center;
+        section:nth-child(1) {
+          width: 100px;
+          text-align: right;
+          font-size: 14px;
+          color: $at-gray;
+          margin-right: 5px;
+          span {
+            color: $at-red;
+          }
+        }
+        .el-input {
+          width: 240px;
+          line-height: 40px;
+          margin-left: 5px;
+        }
+        section:nth-of-type(2) {
+          width: 10px;
+          i {
+            font-size: 18px;
+            margin-left: 5px;
+            color: $at-gray;
+          }
+        }
+      }
+      &-warn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        section:nth-child(1) {
+          width: 100px;
+          height: 24px;
+        }
+        section:nth-of-type(2) {
+          color: $at-red;
+          width: 240px;
+        }
+      }
+    }
+  }
+  &-introduce {
+    width: 100%; // outline: 1px solid red;
+  }
+}
+
+.resetPsdTip {
+  .el-dialog__title {
+    font-size: 16px;
+  }
+  .el-dialog__body {
+    padding: 20px;
+    li {
+      margin-left: 30px;
+      margin-bottom: 20px;
+      padding-bottom: 20px; // border-bottom: 1px dashed $at-gray-9;
+      i {
+        margin-right: 5px;
+        // color: black;
+      }
+      .el-icon-success{
+        color: #14b414
+      }
+      .el-icon-warning{
+        color: red;
+      }
+      span {
+        color: $at-green;
+      }
+    }
+    li:last-child {
+      border: none;
+      padding: 0;
+      margin: 0;
+      margin-left: 30px;
+    }
+  }
+}
+
+.settingDialog {
+  display: flex;
+  align-items: center;
+  span {
+    width: 115px;
+    font-size: 16px;
+    text-align: right;
+    margin-right: 12px;
+    color: $at-gray;
+    i {
+      color: red;
+    }
+  }
+}
