@@ -1,3 +1,12 @@
+/*
+ * @Author: wuchen
+ * @Date: 2018-09-29 15:53:17
+ * @LastEditors: wuchen
+ * @LastEditTime: 2018-09-29 15:53:50
+ * @Description:首页 
+ * @Email: rangowu@163.com
+ */
+
 
 <template>
     <div>

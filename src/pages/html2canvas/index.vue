@@ -1,3 +1,12 @@
+/*
+ * @Author: wuchen
+ * @Date: 2018-09-29 15:54:12
+ * @LastEditors: wuchen
+ * @LastEditTime: 2018-09-29 15:55:29
+ * @Description: 使用htmltocanvas 将html转化成图片,实现导出图片的效果
+ * @Email: rangowu@163.com
+ */
+
 <template>
     <div>
         <div id="home-table">
