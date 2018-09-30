@@ -40,6 +40,24 @@ export default new Router({
       path: '/transfer',
       name: 'transfer',
       component: function (resolve) { require(['@/pages/transfer/index.vue'], resolve) },
-    }
+    },
+    // 折线图
+    {
+      path: '/drawLine',
+      name: 'drawLine',
+      component: function (resolve) { require(['@/pages/echarts/drawLine/index.vue'], resolve) },
+    },
+    // 柱状图
+    {
+      path: '/barCharts',
+      name: 'barCharts',
+      component: function (resolve) { require(['@/pages/echarts/barCharts/index.vue'], resolve) },
+    },
+    // 地图
+    {
+      path: '/map',
+      name: 'map',
+      component: function (resolve) { require(['@/pages/echarts/map/index.vue'], resolve) },
+    },
   ]
 })

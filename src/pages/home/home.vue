@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-09-29 15:53:17
  * @LastEditors: wuchen
- * @LastEditTime: 2018-09-29 15:53:50
+ * @LastEditTime: 2018-09-30 15:11:37
  * @Description:首页 
  * @Email: rangowu@163.com
  */
@@ -18,6 +18,9 @@
         <router-link to="/treeLoading">树加载</router-link>
         <router-link to="/html2canvas">导出成图片</router-link>
         <router-link to="/transfer">穿梭框</router-link>
+        <router-link to="/drawLine">echarts-折线图</router-link>
+        <router-link to="/barCharts">echarts-柱状图</router-link>
+        <router-link to="/map">echarts-地图</router-link>
 
     </div>
 </template>

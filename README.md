@@ -41,5 +41,21 @@ npm install style-loader --save-dev //安装style-loader 有些人安装的是 v
 #4,原理
 sass和scss是两个不同的东西！只是相似！sass借鉴了ruby语言的规范很严格！代码里面也没有大括号！
 这对于习惯用css{}的前端人员很难适应！于是就出现了scss!完美兼容css!还能有sass的功能！
+
+#引入echarts
+#1,安装依赖
+npm install echarts -S
+#2,在main.js进行全局引入
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts
+#3,上面全局引入会将所有的echarts图表打包，导致体积过大,也可按需引入(在使用的地方进行引入)
+# 引入基本模板
+let echarts = require('echarts/lib/echarts')
+# 引入柱状图组件
+require('echarts/lib/chart/bar')
+# 引入提示框和title组件
+require('echarts/lib/component/tooltip')
+require('echarts/lib/component/title')
+
 ```
 
