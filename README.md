@@ -4,7 +4,6 @@
 
 ## Build Setup
 
-``` bash
 > 安装依赖
 > npm install
 
@@ -57,5 +56,4 @@
 >require('echarts/lib/component/tooltip')
 >require('echarts/lib/component/title')
 
-```
 
