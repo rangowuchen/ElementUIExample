@@ -4,7 +4,7 @@
 
 ## Build Setup
 
-``` bash
+<!-- ``` bash -->
 # install dependencies
 npm install
 
@@ -57,5 +57,5 @@ require('echarts/lib/chart/bar')
 require('echarts/lib/component/tooltip')
 require('echarts/lib/component/title')
 
-```
+<!-- ``` -->
 
