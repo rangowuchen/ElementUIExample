@@ -22,6 +22,7 @@
         <router-link to="/barCharts">echarts-柱状图</router-link>
         <router-link to="/map">echarts-地图</router-link>
         <router-link to="/csshake">csshake</router-link>
+        <router-link to="/pie">饼图动画</router-link>
 
     </div>
 </template>

@@ -65,5 +65,14 @@ export default new Router({
       name: 'csshake',
       component: function (resolve) { require(['@/pages/csshake/index.vue'], resolve) },
     },
+    /*
+    *css动画
+    */ 
+  //  饼图动画
+    {
+      path: '/pie',
+      name: 'pie',
+      component: function (resolve) { require(['@/pages/CSSAnimation/CSSScrect/pie/index.vue'], resolve) },
+    },
   ]
 })
