@@ -59,5 +59,11 @@ export default new Router({
       name: 'map',
       component: function (resolve) { require(['@/pages/echarts/map/index.vue'], resolve) },
     },
+    // csshake
+    {
+      path: '/csshake',
+      name: 'csshake',
+      component: function (resolve) { require(['@/pages/csshake/index.vue'], resolve) },
+    },
   ]
 })

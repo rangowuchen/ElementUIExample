@@ -21,6 +21,7 @@
         <router-link to="/drawLine">echarts-折线图</router-link>
         <router-link to="/barCharts">echarts-柱状图</router-link>
         <router-link to="/map">echarts-地图</router-link>
+        <router-link to="/csshake">csshake</router-link>
 
     </div>
 </template>
