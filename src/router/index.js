@@ -67,12 +67,19 @@ export default new Router({
     },
     /*
     *css动画
-    */ 
-  //  饼图动画
+    */
+    //  饼图动画
     {
       path: '/pie',
       name: 'pie',
       component: function (resolve) { require(['@/pages/CSSAnimation/CSSScrect/pie/index.vue'], resolve) },
+    },
+
+    //  父子组件通信
+    {
+      path: '/communication',
+      name: 'communication',
+      component: function (resolve) { require(['@/pages/ComponentCommunication/index.vue'], resolve) },
     },
   ]
 })

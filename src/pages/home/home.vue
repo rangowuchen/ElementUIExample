@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-09-29 15:53:17
  * @LastEditors: wuchen
- * @LastEditTime: 2018-09-30 15:11:37
+ * @LastEditTime: 2018-10-09 17:22:03
  * @Description:首页 
  * @Email: rangowu@163.com
  */
@@ -23,6 +23,7 @@
         <router-link to="/map">echarts-地图</router-link>
         <router-link to="/csshake">csshake</router-link>
         <router-link to="/pie">饼图动画</router-link>
+        <router-link to="/communication">组件通信</router-link>
 
     </div>
 </template>

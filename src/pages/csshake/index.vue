@@ -1,10 +1,14 @@
+/*
+ * @Author: wuchen
+ * @Date: 2018-10-08 15:30:11
+ * @LastEditors: wuchen
+ * @LastEditTime: 2018-10-09 15:31:21
+ * @Description: http://greyli.com/css-shake/ CSShake——元素摇晃特效 https://elrumordelaluz.github.io/csshake/
+ * @Email: rangowu@163.com
+ */
+
 <template>
     <div>
-        <!-- 
-            http://greyli.com/css-shake/
-            CSShake——元素摇晃特效
-            https://elrumordelaluz.github.io/csshake/
-         -->
         <div class="shake">shake</div>
         <div class="shake-hard">shake-hard</div>
         <div class="shake-slow">shake-slow</div>
