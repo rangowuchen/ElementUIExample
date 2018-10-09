@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-09-29 15:53:17
  * @LastEditors: wuchen
- * @LastEditTime: 2018-10-09 17:22:03
+ * @LastEditTime: 2018-10-09 18:58:20
  * @Description:首页 
  * @Email: rangowu@163.com
  */
@@ -24,6 +24,7 @@
         <router-link to="/csshake">csshake</router-link>
         <router-link to="/pie">饼图动画</router-link>
         <router-link to="/communication">组件通信</router-link>
+        <router-link to="/es6">es6</router-link>
 
     </div>
 </template>

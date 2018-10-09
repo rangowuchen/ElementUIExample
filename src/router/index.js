@@ -81,5 +81,11 @@ export default new Router({
       name: 'communication',
       component: function (resolve) { require(['@/pages/ComponentCommunication/index.vue'], resolve) },
     },
+    //  es6
+    {
+      path: '/es6',
+      name: 'es6',
+      component: function (resolve) { require(['@/pages/es6/index.vue'], resolve) },
+    },
   ]
 })
