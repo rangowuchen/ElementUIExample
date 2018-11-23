@@ -27,6 +27,7 @@
         <router-link to="/communication">组件通信</router-link>
         <router-link to="/es6">es6</router-link>
         <router-link to="/md5">md5</router-link>
+        <router-link to="/iconfont">iconfont</router-link>
 
     </div>
 </template>

@@ -99,5 +99,11 @@ export default new Router({
       name: 'es6',
       component: function (resolve) { require(['@/pages/es6/index.vue'], resolve) },
     },
+    //  es6
+    {
+      path: '/iconfont',
+      name: 'iconfont',
+      component: function (resolve) { require(['@/pages/iconfont/index.vue'], resolve) },
+    },
   ]
 })

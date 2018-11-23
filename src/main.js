@@ -16,6 +16,9 @@ import echarts from 'echarts'
 import china from 'echarts/map/js/china'
 Vue.prototype.$echarts = echarts
 
+//引入iconfont
+import './assets/iconfont/iconfont.css'
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
