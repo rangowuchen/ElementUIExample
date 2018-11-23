@@ -71,7 +71,7 @@ import md5 from 'js-md5';
 >1,在iconfont官网中选择自己需要的图标或者项目中ui上传的图标,点击下载到本地,会生成十个文件  
 只需要使用.css,.svg,.eot,.ttf,.woff五个文件,在vue项目中创建文件夹,放入即可     
 >2,在main.js进行全局引入.css文件       
->3,使用:<i class="iconfont icon-gaojing"></i>     
+>3,使用:i class="iconfont icon-gaojing"  i      
 
 
 
