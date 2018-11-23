@@ -23,6 +23,12 @@ export default new Router({
       name: 'test',
       component: function (resolve) { require(['@/pages/test/test.vue'], resolve) },
     },
+    // md5加密
+    {
+      path: '/md5',
+      name: 'md5',
+      component: function (resolve) { require(['@/pages/md5/index.vue'], resolve) },
+    },
     // 树加载
     {
       path: '/treeLoading',
@@ -58,6 +64,12 @@ export default new Router({
       path: '/map',
       name: 'map',
       component: function (resolve) { require(['@/pages/echarts/map/index.vue'], resolve) },
+    },
+    // 拓扑关系图
+    {
+      path: '/relationalGraph',
+      name: 'relationalGraph',
+      component: function (resolve) { require(['@/pages/echarts/relationalGraph/index.vue'], resolve) },
     },
     // csshake
     {

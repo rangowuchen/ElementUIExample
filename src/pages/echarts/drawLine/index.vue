@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-09-30 10:36:31
  * @LastEditors: wuchen
- * @LastEditTime: 2018-09-30 10:48:49
+ * @LastEditTime: 2018-10-26 09:56:12
  * @Description: 折线图
  * @Email: rangowu@163.com
  */
@@ -118,7 +118,7 @@ export default {
             }
           ]
         });
-        return myChart;
+        // return myChart;
       },
   },
   mounted() {

@@ -298,7 +298,7 @@ export default {
           }
         ]
       });
-      return myChart;
+      // return myChart;
     }
   },
   mounted: function() {

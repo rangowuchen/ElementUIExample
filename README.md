@@ -56,4 +56,15 @@ require('echarts/lib/chart/bar')
 require('echarts/lib/component/tooltip')  
 require('echarts/lib/component/title')  
 
+# 引入md5
+>1,安装依赖  
+npm install --save js-md5
+>2,在main.js进行全局引入  
+import md5 from 'js-md5  
+Vue.prototype.$md5 = md5  
+使用:this.$md5('123456') // e10adc3949ba59abbe56e057f20f883e
+>3,局部引入  
+import md5 from 'js-md5';
+使用:this.$md5('123456') // e10adc3949ba59abbe56e057f20f883e
+
 

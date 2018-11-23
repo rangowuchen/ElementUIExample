@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-09-29 15:53:17
  * @LastEditors: wuchen
- * @LastEditTime: 2018-10-09 18:58:20
+ * @LastEditTime: 2018-10-26 09:43:27
  * @Description:首页 
  * @Email: rangowu@163.com
  */
@@ -21,10 +21,12 @@
         <router-link to="/drawLine">echarts-折线图</router-link>
         <router-link to="/barCharts">echarts-柱状图</router-link>
         <router-link to="/map">echarts-地图</router-link>
+        <router-link to="/relationalGraph">echarts-拓扑关系图</router-link>
         <router-link to="/csshake">csshake</router-link>
         <router-link to="/pie">饼图动画</router-link>
         <router-link to="/communication">组件通信</router-link>
         <router-link to="/es6">es6</router-link>
+        <router-link to="/md5">md5</router-link>
 
     </div>
 </template>
