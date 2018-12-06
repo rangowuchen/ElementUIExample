@@ -105,5 +105,11 @@ export default new Router({
       name: 'iconfont',
       component: function (resolve) { require(['@/pages/iconfont/index.vue'], resolve) },
     },
+    // 复选框
+    {
+      path: '/checkbox',
+      name: 'checkbox',
+      component: function (resolve) { require(['@/pages/checkbox/index.vue'], resolve) },
+    },
   ]
 })

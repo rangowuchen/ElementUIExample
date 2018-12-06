@@ -28,6 +28,7 @@
         <router-link to="/es6">es6</router-link>
         <router-link to="/md5">md5</router-link>
         <router-link to="/iconfont">iconfont</router-link>
+        <router-link to="/checkbox">checkbox</router-link>
 
     </div>
 </template>
