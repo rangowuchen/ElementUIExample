@@ -22,8 +22,11 @@ const mutations = {
         console.log('state',state)
         state.count = str;
     },
-    add(state){
-        state.amount++;
+    // add(state){
+    //     state.amount++;
+    // },
+    add(state,n){
+        state.amount +=n;
     },
     reduce(state){
         state.amount--;

@@ -15,15 +15,57 @@
             <button @click="$store.commit('add',5)">+</button>,即在mutations写:add(state,n){state.amount +=n}
 
          -->
-        <p>{{$store.state.amount}}</p>
+         <!-- 方法1 直接在标签内使用 -->
+        <!-- <p>方法1, {{$store.state.amount}}</p> -->
+
+        <!-- 方法2 使用计算属性 -->
+        <!-- <p>方法2, {{amount}}</p> -->
+
+        <!-- 方法3 使用vuex的mapState方法来获取vuex的state对象中属性 两个写法-->
+        <!-- 写法1 -->
+        <!-- <p>方法3-写法1, {{amount}}</p>
         <el-button type="success" @click="$store.commit('add')">+</el-button>
-        <el-button type="warn" @click="$store.commit('reduce')">-</el-button>
+        <el-button type="warn" @click="reduceNumber">-</el-button> -->
+
+
+        <!-- mapMutations的使用方法  使用和mapState类似,主要使用数组形式 -->
+        <!-- 如果需要传参数的话,直接在函数加上即可 -->
+        <p>4,mapMutations {{amount}}</p>
+        <el-button type="warning" @click="add(5)">加</el-button>
+        <el-button type="success" @click="reduce">减</el-button>
+        
     </div>
 </template>
 
 <script>
-import store from '@/store'
+// import store from '@/store'//方法1,2
+import {mapState,mapMutations} from 'vuex';//方法3
 export default {
+    methods:{
+        // 1,2,3
+        // reduceNumber(){
+        //     return this.$store.commit('reduce')
+        // },
+        // 4
+        ...mapMutations(['add','reduce'])
+    },
+    computed:{
+        // 方法2
+        // amount(){
+        //     // 因为store在main.js全局引入了,所以就可以使用this.$store来调用,其中this代表Vue
+        //     //的实例.不可省略
+        //     return this.$store.state.amount;
+        // },
+
+        // 方法3-写法1
+        // 用对象的形式获取
+        ...mapState({
+            amount:state => state.amount//使用es6的箭头函数给amount赋值
+        }),
+        // 方法3-写法2
+        // 用数组的形式获取
+        ...mapState(['amount'])
+    }
 
 }
 </script>
