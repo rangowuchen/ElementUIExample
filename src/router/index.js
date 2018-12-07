@@ -111,5 +111,16 @@ export default new Router({
       name: 'checkbox',
       component: function (resolve) { require(['@/pages/checkbox/index.vue'], resolve) },
     },
+    // vuex实例
+    {
+      path: '/vuex',
+      name: 'vuex',
+      component: function (resolve) { require(['@/pages/vuex/communication/Parent.vue'], resolve) },
+    },
+    {
+      path: '/$store',
+      name: '$store',
+      component: function (resolve) { require(['@/pages/vuex/instantiation/index.vue'], resolve) },
+    },
   ]
 })

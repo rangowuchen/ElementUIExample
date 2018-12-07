@@ -1,8 +1,10 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// 如果是在src下创建的文件夹是store/index.js,那么在main.js中引入store时就可以写成如下格式
+//等同于import store from './store/index';即,如果命名的文件夹名称时store,里面的index.js可以省略不写
+import store from './store'
 
 Vue.config.productionTip = false
 
@@ -22,6 +24,7 @@ import './assets/iconfont/iconfont.css'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,//把store引入到vue实例中,在组件中就可以使用vue实例的$store方法来调用了
   router,
   components: { App },
   template: '<App/>'

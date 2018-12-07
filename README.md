@@ -73,6 +73,15 @@ import md5 from 'js-md5';
 >2,在main.js进行全局引入.css文件       
 >3,使用:i class="iconfont icon-gaojing"  i      
 
+# 引入vuex
+>1,引入   
+npm install vuex --save    
+>2,在src目录下创建store目录,并创建index.js     
+>3,在index.js引用vue,vuex,并use(Vuex)   
+创建state,存储公共状态;创建mutations,用于修改state里属性的方法集合   
+>4,导出state,mutations    
+>5,在main.js引入index.js,并将其引入到vue实例中   
+
 
 
 
