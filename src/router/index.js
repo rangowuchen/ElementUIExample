@@ -128,5 +128,11 @@ export default new Router({
       name: 'digui',
       component: function (resolve) { require(['@/pages/digui/index.vue'], resolve) },
     },
+    // 九宫格
+    {
+      path: '/9pieces',
+      name: '9pieces',
+      component: function (resolve) { require(['@/pages/9pieces/index.vue'], resolve) },
+    },
   ]
 })

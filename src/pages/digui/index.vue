@@ -1,5 +1,6 @@
 <template>
   <div class="list-detail">
+    <!-- https://www.imooc.com/article/265030 -->
     <list :list="list"></list>
   </div>
 </template>

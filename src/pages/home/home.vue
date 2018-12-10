@@ -31,6 +31,7 @@
         <router-link to="/checkbox">checkbox</router-link>
         <router-link to="/vuex">vuex</router-link>
         <router-link to="/digui">递归</router-link>
+        <router-link to="/9pieces">九宫格</router-link>
 
     </div>
 </template>
