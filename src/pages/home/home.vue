@@ -30,6 +30,7 @@
         <router-link to="/iconfont">iconfont</router-link>
         <router-link to="/checkbox">checkbox</router-link>
         <router-link to="/vuex">vuex</router-link>
+        <router-link to="/digui">递归</router-link>
 
     </div>
 </template>

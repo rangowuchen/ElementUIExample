@@ -122,5 +122,11 @@ export default new Router({
       name: '$store',
       component: function (resolve) { require(['@/pages/vuex/instantiation/index.vue'], resolve) },
     },
+    // 递归
+    {
+      path: '/digui',
+      name: 'digui',
+      component: function (resolve) { require(['@/pages/digui/index.vue'], resolve) },
+    },
   ]
 })
