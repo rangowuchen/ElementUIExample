@@ -115,11 +115,16 @@ export default new Router({
     {
       path: '/vuex',
       name: 'vuex',
+      component: function (resolve) { require(['@/pages/vuex/index.vue'], resolve) },
+    },
+    {
+      path: '/Parentchild',
+      name: 'Parentchild',
       component: function (resolve) { require(['@/pages/vuex/communication/Parent.vue'], resolve) },
     },
     {
-      path: '/$store',
-      name: '$store',
+      path: '/mapStatemapMutations',
+      name: 'mapStatemapMutations',
       component: function (resolve) { require(['@/pages/vuex/instantiation/index.vue'], resolve) },
     },
     // 递归
