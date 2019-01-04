@@ -14,24 +14,9 @@
         分别是this.$route.query.name和this.$route.params.name -->
         <a @click="routeParams">路由参数params</a>
         <a @click="routeQuery">路由参数query</a>
-        <router-link to="/tree">tree</router-link>
-        <router-link to="/treeLoading">树加载</router-link>
-        <router-link to="/html2canvas">导出成图片</router-link>
-        <router-link to="/transfer">穿梭框</router-link>
-        <router-link to="/drawLine">echarts-折线图</router-link>
-        <router-link to="/barCharts">echarts-柱状图</router-link>
-        <router-link to="/map">echarts-地图</router-link>
-        <router-link to="/relationalGraph">echarts-拓扑关系图</router-link>
-        <router-link to="/csshake">csshake</router-link>
-        <router-link to="/pie">饼图动画</router-link>
-        <router-link to="/communication">组件通信</router-link>
-        <router-link to="/es6">es6</router-link>
-        <router-link to="/md5">md5</router-link>
-        <router-link to="/iconfont">iconfont</router-link>
-        <router-link to="/checkbox">checkbox</router-link>
-        <router-link to="/vuex">vuex</router-link>
-        <router-link to="/digui">递归</router-link>
-        <router-link to="/9pieces">九宫格</router-link>
+        <span v-for="(item,index) in $router.options.routes" v-if="item.meta"> 
+          <router-link :to="item.path">{{item.meta.title}}</router-link>
+        </span>
 
     </div>
 </template>
