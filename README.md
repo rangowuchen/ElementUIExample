@@ -73,6 +73,11 @@ import md5 from 'js-md5';
 >2,在main.js进行全局引入.css文件       
 >3,使用:i class="iconfont icon-gaojing"  i      
 
+/**
+ * @description: 
+ * @param {type} 
+ * @return: 
+ */
 # 引入vuex
 >1,引入   
 npm install vuex --save    
@@ -81,6 +86,24 @@ npm install vuex --save
 创建state,存储公共状态;创建mutations,用于修改state里属性的方法集合   
 >4,导出state,mutations    
 >5,在main.js引入index.js,并将其引入到vue实例中   
+
+# 引入vue-treeselect
+>1,引入     
+npm install --save @riophae/vue-treeselect        
+>2使用     
+>1),引入组件  
+import Treeselect from '@riophae/vue-treeselect'  
+>2),引入样式  
+import '@riophae/vue-treeselect/dist/vue-treeselect.css'   
+>3,介绍:vue-treeselect是一个多选组件，具有对Vue.js的嵌套选项支持。  
+1)具有嵌套选项支持的单个和多个选择  
+2)模糊匹配  
+3)异步搜索  
+4)延迟加载（仅在需要时加载深层选项的数据）  
+5)键盘支持（使用Arrow Up＆Arrow Down键导航，使用键选择选项Enter等）  
+6)丰富的选项和高度可定制  
+7)支持各种浏览器  
+
 
 
 
