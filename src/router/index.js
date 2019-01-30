@@ -156,11 +156,19 @@ export default new Router({
       meta: { title: "九宫格" },
       component: function (resolve) { require(['@/pages/9pieces/index.vue'], resolve) },
     },
+    // 树下拉选择
     {
       path: '/vue-treeselect',
       name: 'vue-treeselect',
       meta: { title: "vue 树下拉选择" },
       component: function (resolve) { require(['@/pages/vue-treeselect/index.vue'], resolve) },
+    },
+    // vue复用代码--混入 (mixins)
+    {
+      path: '/mixins',
+      name: 'mixins',
+      meta: { title: "vue复用代码--混入 (mixins)" },
+      component: function (resolve) { require(['@/pages/mixins/index.vue'], resolve) },
     },
   ]
 })
