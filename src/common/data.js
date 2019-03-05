@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2019-01-30 14:20:37
  * @LastEditors: wuchen
- * @LastEditTime: 2019-01-30 14:33:52
+ * @LastEditTime: 2019-03-05 10:57:49
  * @Description: 公共数据
  * @Email: rangowu@163.com
  */
@@ -56,6 +56,11 @@ var tabList = [{
     address: '上海市普陀区金沙江路 1516 弄'
 }]
 
+// icon图标的class类名
+var iconList = [
+    'address-book','address-book-o','camera-retro','adjust','address-card','address-card-o','anchor','anchor',
+    'balance-scale','bar-chart','bell','briefcase','calendar','cog','globe','heartbeat','paper-plane','university'
+]
 export default {
-	tabList
+	tabList,iconList
 }

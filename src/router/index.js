@@ -170,5 +170,12 @@ export default new Router({
       meta: { title: "vue复用代码--混入 (mixins)" },
       component: function (resolve) { require(['@/pages/mixins/index.vue'], resolve) },
     },
+    // 图标选择组件
+    {
+      path:'/iconSelect',
+      name:'iconSelect',
+      meta:{title:"图标选择组件"},
+      component:function (resolve) { require(['@/pages/iconSelect/index.vue'], resolve)}
+    },
   ]
 })

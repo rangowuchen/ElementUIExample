@@ -104,6 +104,18 @@ import '@riophae/vue-treeselect/dist/vue-treeselect.css'
 6)丰富的选项和高度可定制  
 7)支持各种浏览器  
 
+# 引入font-awesome
+>1,引入     
+npm install --save font-awesome        
+>2,在main.js进行全局引入      
+import 'font-awesome/css/font-awesome.css'    
+>3,使用  
+i class="fa fa-name"  i
+
+# 设置ico
+>在webpack.dev.conf.js,webpack.prod.conf.js文件的HtmlWebpackPlugin,添加  
+favicon:'./simple.ico'  
+
 
 
 

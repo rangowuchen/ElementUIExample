@@ -21,6 +21,9 @@ Vue.prototype.$echarts = echarts
 //引入iconfont
 import './assets/iconfont/iconfont.css'
 
+// 引入font-awesome字体图标
+import 'font-awesome/css/font-awesome.css'
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
