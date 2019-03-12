@@ -122,8 +122,8 @@ npm install crypto-js --save-dev
 >2,在使用的地方引入     
 import CryptoJS from "crypto-js";      
 >3,使用  
->4,说明
-登陆的时候需要记住密码,这个时候需要前端进行加密
+>4,说明  
+登陆的时候需要记住密码,这个时候需要前端进行加密  
 
 
 
