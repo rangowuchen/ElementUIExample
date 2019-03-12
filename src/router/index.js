@@ -177,5 +177,12 @@ export default new Router({
       meta:{title:"图标选择组件"},
       component:function (resolve) { require(['@/pages/iconSelect/index.vue'], resolve)}
     },
+    // 前端加密
+    {
+      path:'/cryptojs',
+      name:'cryptojs',
+      meta:{title:"前端加密"},
+      component:function (resolve) { require(['@/pages/cryptojs/index.vue'], resolve)}
+    },
   ]
 })

@@ -114,7 +114,16 @@ i class="fa fa-name"  i
 
 # 设置ico
 >在webpack.dev.conf.js,webpack.prod.conf.js文件的HtmlWebpackPlugin,添加  
-favicon:'./simple.ico'  
+favicon:'./simple.ico'    
+
+# 引入crypto-js
+>1,引入     
+npm install crypto-js --save-dev        
+>2,在使用的地方引入     
+import CryptoJS from "crypto-js";      
+>3,使用  
+>4,说明
+登陆的时候需要记住密码,这个时候需要前端进行加密
 
 
 
