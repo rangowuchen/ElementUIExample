@@ -184,5 +184,12 @@ export default new Router({
       meta:{title:"前端加密"},
       component:function (resolve) { require(['@/pages/cryptojs/index.vue'], resolve)}
     },
+    // 图片裁剪
+    {
+      path:'/vue-cropper',
+      name:'vue-cropper',
+      meta:{title:"图片裁剪"},
+      component:function (resolve) { require(['@/pages/vue-cropper/index.vue'], resolve)}
+    },
   ]
 })
