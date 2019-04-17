@@ -191,5 +191,12 @@ export default new Router({
       meta:{title:"图片裁剪"},
       component:function (resolve) { require(['@/pages/vue-cropper/index.vue'], resolve)}
     },
+    // 生成二维码
+    {
+      path:'/qrcode',
+      name:'qrcode',
+      meta:{title:"生成二维码"},
+      component:function (resolve) { require(['@/pages/qrcode/index.vue'], resolve)}
+    },
   ]
 })
