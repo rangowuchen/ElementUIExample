@@ -198,5 +198,12 @@ export default new Router({
       meta:{title:"生成二维码"},
       component:function (resolve) { require(['@/pages/qrcode/index.vue'], resolve)}
     },
+    // jsencrypt前端加密
+    {
+      path:'/jsencrypt',
+      name:'jsencrypt',
+      meta:{title:"jsencrypt前端加密"},
+      component:function (resolve) { require(['@/pages/jsencrypt/index.vue'], resolve)}
+    },
   ]
 })
