@@ -205,5 +205,12 @@ export default new Router({
       meta:{title:"jsencrypt前端加密"},
       component:function (resolve) { require(['@/pages/jsencrypt/index.vue'], resolve)}
     },
+    // 树下拉选择
+    {
+      path: '/selectTree',
+      name: 'selectTree',
+      meta: { title: "下拉树" },
+      component: function (resolve) { require(['@/pages/selectTree/index.vue'], resolve) },
+    },
   ]
 })
