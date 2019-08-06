@@ -233,5 +233,12 @@ export default new Router({
       meta: { title: "搜索树形数据" },
       component: function (resolve) { require(['@/pages/searchTree'], resolve) },
     },
+    // 骨架屏
+    {
+      path: '/skeleton',
+      name: 'skeleton',
+      meta: { title: "骨架屏" },
+      component: function (resolve) { require(['@/pages/skeleton'], resolve) },
+    },
   ]
 })

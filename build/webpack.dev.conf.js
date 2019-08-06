@@ -9,6 +9,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
+const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin')//骨架屏
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -57,6 +58,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       template: 'index.html',
       inject: true,
       favicon:'./simple.ico'//设置ico
+    }),
+    // inject skeleton content(DOM & CSS) into HTML 骨架屏
+    new SkeletonWebpackPlugin({
+      webpackConfig: require('./webpack.skeleton.conf'),
+      quiet: true
     }),
     // copy custom static assets
     new CopyWebpackPlugin([
