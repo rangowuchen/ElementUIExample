@@ -212,5 +212,26 @@ export default new Router({
       meta: { title: "下拉树" },
       component: function (resolve) { require(['@/pages/selectTree/index.vue'], resolve) },
     },
+    // 树表格
+    {
+      path: '/treeTab',
+      name: 'treeTab',
+      meta: { title: "树表格" },
+      component: function (resolve) { require(['@/pages/treeTab'], resolve) },
+    },
+    // element树改造
+    {
+      path: '/elementTree',
+      name: 'elementTree',
+      meta: { title: "element树" },
+      component: function (resolve) { require(['@/pages/elementTree'], resolve) },
+    },
+    // 搜索树形数据
+    {
+      path: '/searchTree',
+      name: 'searchTree',
+      meta: { title: "搜索树形数据" },
+      component: function (resolve) { require(['@/pages/searchTree'], resolve) },
+    },
   ]
 })
