@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2019-08-06 15:11:10
  * @LastEditors: wuchen
- * @LastEditTime: 2019-08-06 15:11:34
+ * @LastEditTime: 2019-08-06 16:10:35
  * @Description: 骨架屏
  * @Email: rangowu@163.com
  -->
@@ -45,19 +45,4 @@
   }
 
 </style>
-
-<!--<template>-->
-  <!--<div>-->
-    <!--<p class="s_top_bg">1111</p>-->
-    <!--<div class="s_con_box">-->
-      <!--<p class="s_z_box bg_1976d2"></p>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</template>-->
-<!--<style scoped>-->
-  <!--.s_top_bg{ height: 1rem; background: #1976d2;}-->
-  <!--.bg_1976d2{ background: #1976d2}-->
-  <!--.s_con_box{ padding: 0.25rem;}-->
-  <!--.s_z_box { width: 2rem; height: 2rem;}-->
-<!--</style>-->
 

@@ -1,3 +1,11 @@
+/*
+ * @Author: wuchen
+ * @Date: 2018-08-14 10:39:32
+ * @LastEditors: wuchen
+ * @LastEditTime: 2018-08-14 10:39:32
+ * @Description: 
+ * @Email: rangowu@163.com
+ */
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home/home'
@@ -239,6 +247,13 @@ export default new Router({
       name: 'skeleton',
       meta: { title: "骨架屏" },
       component: function (resolve) { require(['@/pages/skeleton'], resolve) },
+    },
+    // 地图
+    {
+      path: '/vue-baidu-map',
+      name: 'vue-baidu-map',
+      meta: { title: "地图" },
+      component: function (resolve) { require(['@/pages/vue-baidu-map'], resolve) },
     },
   ]
 })

@@ -21,6 +21,7 @@
     "font-awesome": "^4.7.0",
     "js-md5": "^0.7.3",
     "vue": "^2.5.2",
+    "vue-baidu-map": "^0.21.22",
     "vue-cropper": "^0.4.8",
     "vue-qr": "^2.1.0",
     "vue-router": "^3.0.1",
