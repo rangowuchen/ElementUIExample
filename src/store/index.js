@@ -1,6 +1,13 @@
+/*
+ * @Author: wuchen
+ * @Date: 2018-12-06 19:05:06
+ * @LastEditors: wuchen
+ * @LastEditTime: 2019-08-12 16:54:32
+ * @Description: 
+ * @Email: rangowu@163.com
+ */
 import Vue from 'vue'
 import Vuex from 'vuex';
-
 Vue.use(Vuex)
 // state:仓库共有属性的集合,用于存储公共状态,只存储
 const state = {
@@ -33,8 +40,6 @@ const mutations = {
     }
 
 }
-
-
 export default new Vuex.Store({
     state,
     mutations

@@ -1,10 +1,19 @@
+/*
+ * @Author: wuchen
+ * @Date: 2018-11-23 11:45:11
+ * @LastEditors: wuchen
+ * @LastEditTime: 2019-08-12 17:00:56
+ * @Description: 
+ * @Email: rangowu@163.com
+ */
 
 import Vue from 'vue'
 import App from './App'
 import router from './router'
 // 如果是在src下创建的文件夹是store/index.js,那么在main.js中引入store时就可以写成如下格式
 //等同于import store from './store/index';即,如果命名的文件夹名称时store,里面的index.js可以省略不写
-import store from './store'
+// import store from './store'暂时注释
+import store from './store/store.js'
 
 Vue.config.productionTip = false
 

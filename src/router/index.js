@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2018-08-14 10:39:32
+ * @LastEditTime: 2019-08-12 16:48:00
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -149,6 +149,11 @@ export default new Router({
       path: '/mapStatemapMutations',
       name: 'mapStatemapMutations',
       component: function (resolve) { require(['@/pages/vuex/instantiation/index.vue'], resolve) },
+    },
+    {
+      path: '/vuexAll',
+      name: 'vuexAll',
+      component: function (resolve) { require(['@/pages/vuex/vuexAll/index.vue'], resolve) },
     },
     // 递归
     {

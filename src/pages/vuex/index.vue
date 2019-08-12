@@ -1,3 +1,11 @@
+<!--
+ * @Author: wuchen
+ * @Date: 2018-12-10 15:03:55
+ * @LastEditors: wuchen
+ * @LastEditTime: 2019-08-12 16:48:18
+ * @Description: 
+ * @Email: rangowu@163.com
+ -->
 
 <template>
     <div>
@@ -16,6 +24,7 @@
          -->
         <router-link to="/Parentchild">父子组件</router-link>
         <router-link to="/mapStatemapMutations">mapState,mapMutations</router-link>
+        <router-link to="/vuexAll">vuex状态管理</router-link>
 
     </div>
 </template>
