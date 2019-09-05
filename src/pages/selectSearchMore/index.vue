@@ -2,14 +2,14 @@
  * @Author: wuchen
  * @Date: 2019-09-05 14:30:08
  * @LastEditors: wuchen
- * @LastEditTime: 2019-09-05 17:13:10
+ * @LastEditTime: 2019-09-05 18:39:35
  * @Description: 
  * @Email: rangowu@163.com
  -->
 <template>
     <div>
         <el-select class="selectTab" v-model="searchValue" filterable :filter-method="userFilter" clearable>
-            <el-option v-for="item in userData" :key="item.userId" :label="item.username" :value="item.userId">
+            <el-option v-for="item in userDataTemp" :key="item.userId" :label="item.username" :value="item.userId">
                 <span style="float: left">{{ item.username }}</span>
                 <span style="float: right; color: #8492a6; font-size: 13px">{{ item.userId }}</span>
             </el-option>
@@ -36,7 +36,7 @@ import { fail } from 'assert';
     export default {
         data() {
             return {
-                allUserList: [{
+                dataList: [{
                         username: "士大夫但是",
                         userId: "1"
                     },
@@ -89,7 +89,7 @@ import { fail } from 'assert';
                         userId: "13"
                     }
                 ],
-                userData: [],
+                userDataTemp: [],
                 searchValue: "",
 
                 userTemp:[],
@@ -100,15 +100,15 @@ import { fail } from 'assert';
         },
         mounted() {
             this.userFilter();
-            this.userTemp = this.allUserList;
+            this.userTemp = this.dataList;
         },
         watch:{
             value(val){
                 if(this.isSelect){
-                    this.userTemp = this.allUserList;
+                    this.userTemp = this.dataList;
                     this.isSelect = false;
                 }else{
-                    let arr = this.allUserList.filter(item =>{
+                    let arr = this.dataList.filter(item =>{
                         return item.username.indexOf(val) != -1 || item.userId.indexOf(val) != -1
                     });
                     this.userTemp = arr;
@@ -118,15 +118,15 @@ import { fail } from 'assert';
         methods: {
             // filter-method
             userFilter(query = "") {
-                let arr = this.allUserList.filter(item => {
+                let arr = this.dataList.filter(item => {
                     return (
                         item.username.indexOf(query) != -1 || item.userId.indexOf(query) != -1
                     );
                 });
                 if (arr.length > 50) {
-                    this.userData = arr.slice(0, 50);
+                    this.userDataTemp = arr.slice(0, 50);
                 } else {
-                    this.userData = arr;
+                    this.userDataTemp = arr;
                 }
             },
             // 表格

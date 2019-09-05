@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2019-09-05 14:32:18
+ * @LastEditTime: 2019-09-05 18:32:57
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -266,6 +266,13 @@ export default new Router({
       name: 'selectSearchMore',
       meta: { title: "下拉搜索多个字段" },
       component: function (resolve) { require(['@/pages/selectSearchMore'], resolve) },
+    },
+    // 测试页面
+    {
+      path: '/aaaaaa',
+      name: 'aaaaaa',
+      meta: { title: "测试的" },
+      component: function (resolve) { require(['@/pages/test/aaaaaa'], resolve) },
     },
   ]
 })
