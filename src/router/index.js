@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2019-08-12 16:48:00
+ * @LastEditTime: 2019-09-05 14:32:18
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -259,6 +259,13 @@ export default new Router({
       name: 'vue-baidu-map',
       meta: { title: "地图" },
       component: function (resolve) { require(['@/pages/vue-baidu-map'], resolve) },
+    },
+    // 下拉框一行显示几个字段,可搜索
+    {
+      path: '/selectSearchMore',
+      name: 'selectSearchMore',
+      meta: { title: "下拉搜索多个字段" },
+      component: function (resolve) { require(['@/pages/selectSearchMore'], resolve) },
     },
   ]
 })
