@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2019-09-05 18:32:57
+ * @LastEditTime: 2019-09-10 19:45:46
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -273,6 +273,34 @@ export default new Router({
       name: 'aaaaaa',
       meta: { title: "测试的" },
       component: function (resolve) { require(['@/pages/test/aaaaaa'], resolve) },
+    },
+    // 权限树111
+    {
+      path: '/permTree',
+      name: 'permTree',
+      meta: { title: "权限树111" },
+      component: function (resolve) { require(['@/pages/tree/perm'], resolve) },
+    },
+    // 权限树222
+    {
+      path: '/permMenu',
+      name: 'permMenu',
+      meta: { title: "权限树222" },
+      component: function (resolve) { require(['@/pages/tree/treeMenu'], resolve) },
+    },
+    // 权限树333
+    {
+      path: '/treeData',
+      name: 'treeData',
+      meta: { title: "权限树333" },
+      component: function (resolve) { require(['@/pages/tree/vue-tree'], resolve) },
+    },
+    // element树单选
+    {
+      path: '/singleSelectTree',
+      name: 'singleSelectTree',
+      meta: { title: "element树单选" },
+      component: function (resolve) { require(['@/pages/tree/element-tree/singleSelect'], resolve) },
     },
   ]
 })
