@@ -1,3 +1,11 @@
+<!--
+ * @Author: wuchen
+ * @Date: 2018-08-14 11:18:08
+ * @LastEditors: wuchen
+ * @LastEditTime: 2019-10-28 17:10:03
+ * @Description: 
+ * @Email: rangowu@163.com
+ -->
 /*
  * @Author: wuchen
  * @Date: 2018-09-29 15:53:17
@@ -12,11 +20,13 @@
     <div>
         <!-- query要用path来引入，params要用name来引入，接收参数都是类似的，
         分别是this.$route.query.name和this.$route.params.name -->
-        <a @click="routeParams">路由参数params</a>
-        <a @click="routeQuery">路由参数query</a>
-        <span v-for="(item,index) in $router.options.routes" v-if="item.meta"> 
+        <div class="routerType">
+          <a @click="routeParams">路由参数params</a>
+          <a @click="routeQuery">路由参数query</a>
+        </div>
+        <div class="sec" v-for="(item,index) in $router.options.routes" v-if="item.meta"> 
           <router-link :to="item.path">{{item.meta.title}}</router-link>
-        </span>
+        </div>
 
     </div>
 </template>
@@ -51,5 +61,12 @@ export default {
 <style lang="scss" scoped>
 a {
   margin: 10px;
+}
+.routerType{
+  line-height: 50px;
+}
+.sec{
+  width:25%;
+  float: left;
 }
 </style>

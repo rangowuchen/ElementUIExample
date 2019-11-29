@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2019-09-10 19:45:46
+ * @LastEditTime: 2019-10-28 17:15:06
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -32,6 +32,69 @@ export default new Router({
       name: 'treeLoading',
       meta: { title: "树加载" },
       component: function (resolve) { require(['@/pages/tree/treeLoading.vue'], resolve) },
+    },
+    // 权限树111
+    {
+      path: '/permTree',
+      name: 'permTree',
+      meta: { title: "权限树111" },
+      component: function (resolve) { require(['@/pages/tree/perm'], resolve) },
+    },
+    // 权限树222
+    {
+      path: '/permMenu',
+      name: 'permMenu',
+      meta: { title: "权限树222" },
+      component: function (resolve) { require(['@/pages/tree/treeMenu'], resolve) },
+    },
+    // 权限树333
+    {
+      path: '/treeData',
+      name: 'treeData',
+      meta: { title: "权限树333" },
+      component: function (resolve) { require(['@/pages/tree/vue-tree'], resolve) },
+    },
+    // element树单选
+    {
+      path: '/singleSelectTree',
+      name: 'singleSelectTree',
+      meta: { title: "element树单选" },
+      component: function (resolve) { require(['@/pages/tree/element-tree/singleSelect'], resolve) },
+    },
+    // 树下拉选择
+    {
+      path: '/vue-treeselect',
+      name: 'vue-treeselect',
+      meta: { title: "vue 树下拉选择" },
+      component: function (resolve) { require(['@/pages/vue-treeselect/index.vue'], resolve) },
+    },
+    // 树下拉选择
+    {
+      path: '/selectTree',
+      name: 'selectTree',
+      meta: { title: "下拉树" },
+      component: function (resolve) { require(['@/pages/selectTree/index.vue'], resolve) },
+    },
+    // 树表格
+    {
+      path: '/treeTab',
+      name: 'treeTab',
+      meta: { title: "树表格" },
+      component: function (resolve) { require(['@/pages/treeTab'], resolve) },
+    },
+    // element树改造
+    {
+      path: '/elementTree',
+      name: 'elementTree',
+      meta: { title: "element树" },
+      component: function (resolve) { require(['@/pages/elementTree'], resolve) },
+    },
+    // 搜索树形数据
+    {
+      path: '/searchTree',
+      name: 'searchTree',
+      meta: { title: "搜索树形数据" },
+      component: function (resolve) { require(['@/pages/searchTree'], resolve) },
     },
     // 测试路由
     {
@@ -80,13 +143,6 @@ export default new Router({
       name: 'map',
       meta: { title: "echarts-地图" },
       component: function (resolve) { require(['@/pages/echarts/map/index.vue'], resolve) },
-    },
-    // 拓扑关系图
-    {
-      path: '/relationalGraph',
-      name: 'relationalGraph',
-      meta: { title: "echarts-拓扑关系图" },
-      component: function (resolve) { require(['@/pages/echarts/relationalGraph/index.vue'], resolve) },
     },
     // csshake
     {
@@ -169,13 +225,6 @@ export default new Router({
       meta: { title: "九宫格" },
       component: function (resolve) { require(['@/pages/9pieces/index.vue'], resolve) },
     },
-    // 树下拉选择
-    {
-      path: '/vue-treeselect',
-      name: 'vue-treeselect',
-      meta: { title: "vue 树下拉选择" },
-      component: function (resolve) { require(['@/pages/vue-treeselect/index.vue'], resolve) },
-    },
     // vue复用代码--混入 (mixins)
     {
       path: '/mixins',
@@ -218,34 +267,7 @@ export default new Router({
       meta:{title:"jsencrypt前端加密"},
       component:function (resolve) { require(['@/pages/jsencrypt/index.vue'], resolve)}
     },
-    // 树下拉选择
-    {
-      path: '/selectTree',
-      name: 'selectTree',
-      meta: { title: "下拉树" },
-      component: function (resolve) { require(['@/pages/selectTree/index.vue'], resolve) },
-    },
-    // 树表格
-    {
-      path: '/treeTab',
-      name: 'treeTab',
-      meta: { title: "树表格" },
-      component: function (resolve) { require(['@/pages/treeTab'], resolve) },
-    },
-    // element树改造
-    {
-      path: '/elementTree',
-      name: 'elementTree',
-      meta: { title: "element树" },
-      component: function (resolve) { require(['@/pages/elementTree'], resolve) },
-    },
-    // 搜索树形数据
-    {
-      path: '/searchTree',
-      name: 'searchTree',
-      meta: { title: "搜索树形数据" },
-      component: function (resolve) { require(['@/pages/searchTree'], resolve) },
-    },
+    
     // 骨架屏
     {
       path: '/skeleton',
@@ -274,33 +296,19 @@ export default new Router({
       meta: { title: "测试的" },
       component: function (resolve) { require(['@/pages/test/aaaaaa'], resolve) },
     },
-    // 权限树111
+    // 拓扑关系图
     {
-      path: '/permTree',
-      name: 'permTree',
-      meta: { title: "权限树111" },
-      component: function (resolve) { require(['@/pages/tree/perm'], resolve) },
+      path: '/relationalGraph',
+      name: 'relationalGraph',
+      meta: { title: "echarts-拓扑关系图" },
+      component: function (resolve) { require(['@/pages/echarts/relationalGraph/index.vue'], resolve) },
     },
-    // 权限树222
+    // 拓扑图
     {
-      path: '/permMenu',
-      name: 'permMenu',
-      meta: { title: "权限树222" },
-      component: function (resolve) { require(['@/pages/tree/treeMenu'], resolve) },
-    },
-    // 权限树333
-    {
-      path: '/treeData',
-      name: 'treeData',
-      meta: { title: "权限树333" },
-      component: function (resolve) { require(['@/pages/tree/vue-tree'], resolve) },
-    },
-    // element树单选
-    {
-      path: '/singleSelectTree',
-      name: 'singleSelectTree',
-      meta: { title: "element树单选" },
-      component: function (resolve) { require(['@/pages/tree/element-tree/singleSelect'], resolve) },
+      path: '/topology',
+      name: 'topology',
+      meta: { title: "拓扑图" },
+      component: function (resolve) { require(['@/pages/topology'], resolve) },
     },
   ]
 })
