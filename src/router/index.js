@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2019-10-28 17:15:06
+ * @LastEditTime: 2019-12-16 13:55:18
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -95,6 +95,19 @@ export default new Router({
       name: 'searchTree',
       meta: { title: "搜索树形数据" },
       component: function (resolve) { require(['@/pages/searchTree'], resolve) },
+    },
+    // bTree.elTree
+    {
+      path: '/bTree',
+      name: 'bTree',
+      meta: { title: "bTree" },
+      component: function (resolve) { require(['@/pages/tree/vueBigTree/bTree'], resolve) },
+    },
+    {
+      path: '/elTree',
+      name: 'elTree',
+      meta: { title: "elTree" },
+      component: function (resolve) { require(['@/pages/tree/vueBigTree/elTree'], resolve) },
     },
     // 测试路由
     {
@@ -309,6 +322,13 @@ export default new Router({
       name: 'topology',
       meta: { title: "拓扑图" },
       component: function (resolve) { require(['@/pages/topology'], resolve) },
+    },
+    // 数组遍历
+    {
+      path: '/arrMap',
+      name: 'arrMap',
+      meta: { title: "数组遍历" },
+      component: function (resolve) { require(['@/pages/arrMap'], resolve) },
     },
   ]
 })
