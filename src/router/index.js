@@ -1,8 +1,8 @@
 /*
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
- * @LastEditors: wuchen
- * @LastEditTime: 2019-12-16 13:55:18
+ * @LastEditors  : wuchen
+ * @LastEditTime : 2020-01-02 18:54:26
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -108,6 +108,13 @@ export default new Router({
       name: 'elTree',
       meta: { title: "elTree" },
       component: function (resolve) { require(['@/pages/tree/vueBigTree/elTree'], resolve) },
+    },
+    // 某些节点横向排列
+    {
+      path: '/infeedTree',
+      name: 'infeedTree',
+      meta: { title: "某些节点横向排列" },
+      component: function (resolve) { require(['@/pages/tree/infeedTree'], resolve) },
     },
     // 测试路由
     {
@@ -329,6 +336,13 @@ export default new Router({
       name: 'arrMap',
       meta: { title: "数组遍历" },
       component: function (resolve) { require(['@/pages/arrMap'], resolve) },
+    },
+    // 折叠面板
+    {
+      path: '/collapseCard',
+      name: 'collapseCard',
+      meta: { title: "折叠面板" },
+      component: function (resolve) { require(['@/pages/collapseCard'], resolve) },
     },
   ]
 })
