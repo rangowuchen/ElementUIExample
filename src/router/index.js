@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors  : wuchen
- * @LastEditTime : 2020-01-02 18:54:26
+ * @LastEditTime : 2020-01-03 11:02:24
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -23,99 +23,101 @@ export default new Router({
     {
       path: '/tree',
       name: 'tree',
-      meta: { title: "树" },
+      meta: { title: "树",type:'tree' },
       component: function (resolve) { require(['@/pages/tree/index.vue'], resolve) },
     },
     // 树加载
     {
       path: '/treeLoading',
       name: 'treeLoading',
-      meta: { title: "树加载" },
+      meta: { title: "树加载",type:'tree' },
       component: function (resolve) { require(['@/pages/tree/treeLoading.vue'], resolve) },
     },
     // 权限树111
     {
       path: '/permTree',
       name: 'permTree',
-      meta: { title: "权限树111" },
+      meta: { title: "权限树111",type:'tree' },
       component: function (resolve) { require(['@/pages/tree/perm'], resolve) },
     },
     // 权限树222
     {
       path: '/permMenu',
       name: 'permMenu',
-      meta: { title: "权限树222" },
+      meta: { title: "权限树222",type:'tree' },
       component: function (resolve) { require(['@/pages/tree/treeMenu'], resolve) },
     },
     // 权限树333
     {
       path: '/treeData',
       name: 'treeData',
-      meta: { title: "权限树333" },
+      meta: { title: "权限树333",type:'tree' },
       component: function (resolve) { require(['@/pages/tree/vue-tree'], resolve) },
     },
     // element树单选
     {
       path: '/singleSelectTree',
       name: 'singleSelectTree',
-      meta: { title: "element树单选" },
+      meta: { title: "element树单选",type:'tree' },
       component: function (resolve) { require(['@/pages/tree/element-tree/singleSelect'], resolve) },
     },
     // 树下拉选择
     {
       path: '/vue-treeselect',
       name: 'vue-treeselect',
-      meta: { title: "vue 树下拉选择" },
+      meta: { title: "vue 树下拉选择",type:'tree' },
       component: function (resolve) { require(['@/pages/vue-treeselect/index.vue'], resolve) },
     },
     // 树下拉选择
     {
       path: '/selectTree',
       name: 'selectTree',
-      meta: { title: "下拉树" },
+      meta: { title: "下拉树",type:'tree' },
       component: function (resolve) { require(['@/pages/selectTree/index.vue'], resolve) },
     },
     // 树表格
     {
       path: '/treeTab',
       name: 'treeTab',
-      meta: { title: "树表格" },
+      meta: { title: "树表格",type:'tree' },
       component: function (resolve) { require(['@/pages/treeTab'], resolve) },
     },
     // element树改造
     {
       path: '/elementTree',
       name: 'elementTree',
-      meta: { title: "element树" },
+      meta: { title: "element树",type:'tree' },
       component: function (resolve) { require(['@/pages/elementTree'], resolve) },
     },
     // 搜索树形数据
     {
       path: '/searchTree',
       name: 'searchTree',
-      meta: { title: "搜索树形数据" },
+      meta: { title: "搜索树形数据",type:'tree' },
       component: function (resolve) { require(['@/pages/searchTree'], resolve) },
     },
     // bTree.elTree
     {
       path: '/bTree',
       name: 'bTree',
-      meta: { title: "bTree" },
+      meta: { title: "bTree",type:'tree' },
       component: function (resolve) { require(['@/pages/tree/vueBigTree/bTree'], resolve) },
     },
     {
       path: '/elTree',
       name: 'elTree',
-      meta: { title: "elTree" },
+      meta: { title: "elTree",type:'tree' },
       component: function (resolve) { require(['@/pages/tree/vueBigTree/elTree'], resolve) },
     },
     // 某些节点横向排列
     {
       path: '/infeedTree',
       name: 'infeedTree',
-      meta: { title: "某些节点横向排列" },
+      meta: { title: "某些树节点横向排列",type:'tree' },
       component: function (resolve) { require(['@/pages/tree/infeedTree'], resolve) },
     },
+
+
     // 测试路由
     {
       path: '/test',
@@ -215,6 +217,13 @@ export default new Router({
       name: 'vuex',
       meta: { title: "vuex" },
       component: function (resolve) { require(['@/pages/vuex/index.vue'], resolve) },
+    },
+    // vuex理解
+    {
+      path: '/vuexDesc',
+      name: 'vuexDesc',
+      meta: { title: "vuex理解" },
+      component: function (resolve) { require(['@/pages/vuex/vuexDesc/index.vue'], resolve) },
     },
     {
       path: '/Parentchild',

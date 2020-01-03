@@ -1,8 +1,8 @@
 <!--
  * @Author: wuchen
  * @Date: 2018-08-14 11:18:08
- * @LastEditors: wuchen
- * @LastEditTime: 2019-10-28 17:10:03
+ * @LastEditors  : wuchen
+ * @LastEditTime : 2020-01-03 10:58:38
  * @Description: 
  * @Email: rangowu@163.com
  -->
@@ -24,8 +24,8 @@
           <a @click="routeParams">路由参数params</a>
           <a @click="routeQuery">路由参数query</a>
         </div>
-        <div class="sec" v-for="(item,index) in $router.options.routes" v-if="item.meta"> 
-          <router-link :to="item.path">{{item.meta.title}}</router-link>
+        <div class="sec" v-for="(item,index) in $router.options.routes" v-if="item.meta">
+          {{index=index<10?'0'+index:index}}.<router-link :to="item.path">{{item.meta.title}}</router-link>
         </div>
 
     </div>
@@ -68,5 +68,6 @@ a {
 .sec{
   width:25%;
   float: left;
+  text-align: left;
 }
 </style>
