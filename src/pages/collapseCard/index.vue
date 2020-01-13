@@ -2,36 +2,25 @@
  * @Author: wuchen
  * @Date: 2019-12-17 16:35:26
  * @LastEditors  : wuchen
- * @LastEditTime : 2019-12-18 11:50:04
+ * @LastEditTime : 2020-01-13 17:06:18
  * @Description: 
  * @Email: rangowu@163.com
  -->
 <template>
   <div>
-    <el-card class="box-card" v-for="(item) in baseData" :key="item.id">
+    <el-card class="box-card" v-for="(item,index) in baseData" :key="item.id">
       <div slot="header" class="clearfix">
-        <span>参数名称:这是卡片</span>
+        <span>参数名称:{{item.name}}</span>
         <span>参数描述:这是树洞树洞</span>
-        <el-button style="float: right; padding: 3px 0" type="text" @click="test(item)">
-          <span v-if="!item.openFlag">展开</span>
-          <span v-else>收缩</span>
+        <el-button style="float: right; padding: 3px 0" type="text" @click="test(item,index)">
+          <span v-if="!item.openFlag"><i class="el-icon-arrow-down"></i></span>
+          <span v-else><i style="transform:rotate(90deg);-ms-transform:rotate(90deg);-moz-transform:rotate(90deg);-webkit-transform:rotate(90deg);-o-transform:rotate(90deg);" class="el-icon-arrow-up"></i></span>
         </el-button>
       </div>
-      <div v-if="item.openFlag" ref="liCon" v-for="o in 4" :key="o" class="text item cardContent">
-        {{'列表内容 ' + o }}
+      <div v-if="item.openFlag"  class="text item cardContent">
+        <span v-for="itemChild in item.children" :key="itemChild.itemId">{{'列表内容 ' + itemChild.itemName }}</span>
       </div>
     </el-card>
-    <!-- <div class="newslist">
-      <ul>
-        <li v-for="(item,index) in baseData" :key="index">
-          <p class="p" ref="liCon">{{item.name}}</p>
-          <div class="open" @click="open(item,index)">
-            <div v-if="!item.openFlag">【展开】</div>
-            <div v-else>【收缩】</div>
-          </div>
-        </li>
-      </ul>
-    </div> -->
   </div>
 </template>
 
@@ -44,12 +33,40 @@ import Vue from 'vue';
         baseData: [{
             name: 'haha',
             id: 1,
-            openFlag:false
+            openFlag:false,
+            children:[
+              {
+                itemName:'qqq',
+                itemId:11
+              },
+              {
+                itemName:'www',
+                itemId:12
+              },
+              {
+                itemName:'eee',
+                itemId:13
+              },
+            ]
           },
           {
             name: 'huhu',
             id: 2,
-            openFlag:false
+            openFlag:false,
+            children:[
+              {
+                itemName:'aaa',
+                itemId:21
+              },
+              {
+                itemName:'sss',
+                itemId:22
+              },
+              {
+                itemName:'ddd',
+                itemId:23
+              },
+            ]
           },
           {
             name: 'hoho',
@@ -66,32 +83,17 @@ import Vue from 'vue';
       };
     },
     methods: {
-      test(item) {
+      test(item,index) {
         console.log(item);
+        var aa = document.getElementsByClassName('box-card')[index].style
         if (!item.openFlag) {
           Vue.set(item, 'openFlag', true)
+          aa.height = 200 + 'px';
         } else {
           Vue.set(item, 'openFlag', false)
+          aa.height = 80 + 'px'
         }
       },
-      open(item, i) {
-        const liCon = this.$refs.liCon[i]
-        var height = liCon.offsetHeight
-        if (height === this.liConHeight) { // 展开
-          liCon.style.height = 'auto'
-          height = liCon.offsetHeight
-          liCon.style.height = this.liConHeight + 'px'
-          var f = document.body.offsetHeight // 必加
-          liCon.style.height = height + 'px'
-        } else { // 收缩
-          liCon.style.height = this.liConHeight + 'px'
-        }
-        if (!item.openFlag) {
-          Vue.set(item, 'openFlag', true)
-        } else {
-          Vue.set(item, 'openFlag', false)
-        }
-      }
     }
   };
 </script>
@@ -113,6 +115,8 @@ import Vue from 'vue';
   }
   .box-card {
     width: 480px;
+    height: 80px;
+    transition: height .5s;
   }
   .newslist ul li p {
     font-size: 14px;
@@ -123,6 +127,7 @@ import Vue from 'vue';
     transition: height .3s;
   }
   .cardContent{
+    max-height: 20px;
     transition: .3s;
   }
 </style>
