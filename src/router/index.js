@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors  : wuchen
- * @LastEditTime : 2020-01-03 11:02:24
+ * @LastEditTime : 2020-01-14 15:22:53
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -351,7 +351,7 @@ export default new Router({
       path: '/collapseCard',
       name: 'collapseCard',
       meta: { title: "折叠面板" },
-      component: function (resolve) { require(['@/pages/collapseCard'], resolve) },
+      component: function (resolve) { require(['@/pages/collapseCard/index3.vue'], resolve) },
     },
   ]
 })
