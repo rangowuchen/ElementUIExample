@@ -10,6 +10,7 @@
 <template>
   <div>
     <div id="home-table">
+      <img src="@/assets/img/avatar.png" alt="">
       <el-button size="large" @click="exportBase">&#32;导出</el-button>
       <el-table :data="tableData" style="width: 100%">
         <el-table-column prop="date" label="日期" width="180">
