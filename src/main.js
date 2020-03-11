@@ -1,8 +1,8 @@
 /*
  * @Author: wuchen
  * @Date: 2018-11-23 11:45:11
- * @LastEditors  : wuchen
- * @LastEditTime : 2020-01-03 11:46:03
+ * @LastEditors: wuchen
+ * @LastEditTime: 2020-03-10 15:43:49
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -34,6 +34,12 @@ import './assets/iconfont/iconfont.css'
 
 // 引入font-awesome字体图标
 import 'font-awesome/css/font-awesome.css'
+// 权限控制
+import '@/permission.js'
+
+// 引入vueworker
+import VueWorker from 'vue-worker';
+Vue.use(VueWorker)
 
 /* eslint-disable no-new */
 new Vue({
