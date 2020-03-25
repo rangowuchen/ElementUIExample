@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2020-03-10 15:43:41
+ * @LastEditTime: 2020-03-25 11:19:59
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -321,6 +321,13 @@ export const routes = [
     meta: { title: "测试的" },
     component: function (resolve) { require(['@/pages/test/aaaaaa'], resolve) },
   },
+  // 下拉搜索的 filter-method
+  {
+    path: '/filterMethod',
+    name: 'filterMethod',
+    meta: { title: "filter-method" },
+    component: function (resolve) { require(['@/pages/filter-method/'], resolve) },
+  },
   // 拓扑关系图
   {
     path: '/relationalGraph',
@@ -362,6 +369,13 @@ export const routes = [
     name: 'login',
     meta: { title: '登录' },
     component: function (resolve) { require(['@/pages/login'], resolve) }
+  },
+  // worker-loader
+  {
+    path: '/worker-loader',
+    name: 'worker-loader',
+    meta: { title: 'worker-loader' },
+    component: function (resolve) { require(['@/pages/worker'], resolve) }
   }
 ]
 Vue.use(Router)

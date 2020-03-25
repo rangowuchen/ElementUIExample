@@ -68,6 +68,12 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      // worker-loader配置信息
+      {
+        test: /\.worker\.js$/,//以.worker.js结尾的文件将被worker-loader加载 
+        use: { loader: 'worker-loader' }//指定文件的加载器
+
       }
     ]
   },
