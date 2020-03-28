@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2020-03-06 14:40:58
  * @LastEditors: wuchen
- * @LastEditTime: 2020-03-10 15:53:48
+ * @LastEditTime: 2020-03-26 10:07:43
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -21,7 +21,7 @@ router.beforeEach(async(to, from, next) => {
   const hasToken = window.localStorage.getItem('token')
 
   if (hasToken) {
-    if (to.path === '/login') {
+    if (to.path === '/login' || to.path === '/') {
       next({ path: '/home' })
       NProgress.done()
     } else {

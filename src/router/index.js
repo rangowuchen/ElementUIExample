@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2020-03-25 11:19:59
+ * @LastEditTime: 2020-03-25 16:31:41
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -133,6 +133,13 @@ export const routes = [
     name: 'html2canvas',
     meta: { title: "导出成图片" },
     component: function (resolve) { require(['@/pages/html2canvas/index.vue'], resolve) },
+  },
+  // 将html转化成图片--微信中长按保存
+  {
+    path: '/longpressToSaveImg',
+    name: 'longpressToSaveImg',
+    meta: { title: "长按保存图片" },
+    component: function (resolve) { require(['@/pages/html2canvas/longpressToSaveImg.vue'], resolve) },
   },
   // 穿梭框
   {

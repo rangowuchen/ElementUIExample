@@ -1,3 +1,11 @@
+<!--
+ * @Author: wuchen
+ * @Date: 2018-08-14 10:39:32
+ * @LastEditors: wuchen
+ * @LastEditTime: 2020-03-27 18:04:11
+ * @Description: 
+ * @Email: rangowu@163.com
+ -->
 <template>
   <div id="app">
     <router-view/>
@@ -11,6 +19,12 @@ export default {
 </script>
 
 <style>
+html,body,#app{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
