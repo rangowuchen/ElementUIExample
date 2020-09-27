@@ -2,14 +2,14 @@
  * @Author: wuchen
  * @Date: 2020-03-28 14:33:30
  * @LastEditors: wuchen
- * @LastEditTime: 2020-03-28 15:06:47
+ * @LastEditTime: 2020-03-31 11:39:58
  * @Description: 框架-左右结构
  * @Email: rangowu@163.com
  -->
 <template>
     <div class="app-wrapper">
         <!-- 左侧菜单-->
-        <div class="sidebar-container"></div>
+        <sidebar class="sidebar-container"></sidebar>
         <!-- 右侧 -->
         <div :class="{hasTagsViews:needTagsView}" class="main-container">
             <!-- 头部内容 -->
@@ -23,15 +23,19 @@
             <!-- 内容区 -->
             <app-main />
             <!-- 设置 -->
+            <right-panel v-if="showSettings">
+                <settings></settings>
+            </right-panel>
         </div>
     </div>
 </template>
 
 <script>
+import RightPanel from '@/components/RightPanel';
 import { AppMain, Navbar, Settings, Sidebar, TagsView } from './components'
 export default {
     name: 'layout',
-    components:{AppMain, Navbar, Settings, Sidebar, TagsView},
+    components:{AppMain, Navbar, Settings, Sidebar, TagsView, RightPanel},
     data(){
         return{
             

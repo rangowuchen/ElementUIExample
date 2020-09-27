@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-11-23 11:45:11
  * @LastEditors: wuchen
- * @LastEditTime: 2020-03-10 15:43:49
+ * @LastEditTime: 2020-07-24 15:16:54
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -40,6 +40,13 @@ import '@/permission.js'
 // 引入vueworker
 import VueWorker from 'vue-worker';
 Vue.use(VueWorker)
+
+import dataV from '@jiaminghi/data-view'
+Vue.use(dataV)
+
+// 星空连线
+import VueParticles from 'vue-particles'  
+Vue.use(VueParticles)
 
 /* eslint-disable no-new */
 new Vue({

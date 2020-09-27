@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2020-03-25 16:31:41
+ * @LastEditTime: 2020-09-14 15:03:15
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -377,13 +377,97 @@ export const routes = [
     meta: { title: '登录' },
     component: function (resolve) { require(['@/pages/login'], resolve) }
   },
+  // 登录1
+  {
+    path: '/login1',
+    name: 'login1',
+    meta: { title: '登录1' },
+    component: function (resolve) { require(['@/pages/login/donghua'], resolve) }
+  },
   // worker-loader
   {
     path: '/worker-loader',
     name: 'worker-loader',
     meta: { title: 'worker-loader' },
     component: function (resolve) { require(['@/pages/worker'], resolve) }
-  }
+  },
+  // 表格
+  // 表格内编辑
+  {
+    path: '/editTable',
+    name: 'editTable',
+    meta: { title: 'editTable' },
+    component: function (resolve) { require(['@/pages/table/editTable'], resolve) }
+  },
+  // 表单
+  {
+    path: '/from',
+    name: 'form',
+    meta: { title: '表单' },
+    component: function (resolve) { require(['@/pages/form'], resolve) }
+  },
+  // 锚点
+  {
+    path: '/anchor',
+    name: 'anchor',
+    meta: { title: '锚点' },
+    component: function (resolve) { require(['@/pages/anchor/index3'], resolve) }
+  },
+  // 特效
+  {
+    path: '/cover',
+    name: 'cover',
+    meta: { title: 'cover' },
+    component: function (resolve) { require(['@/pages/specialEfficiency/login/index2.vue'], resolve) }
+  },
+  {
+    path: '/line',
+    name: 'line',
+    meta: { title: '星空连线' },
+    component: function (resolve) { require(['@/pages/specialEfficiency/connectLine/'], resolve) }
+  },
+  // 登录效果
+  {
+    path: '/login3',
+    name: 'login3',
+    meta: { title: '登录效果3' },
+    component: function (resolve) { require(['@/pages/specialEfficiency/login/index3.vue'], resolve) }
+  },
+  // 过渡效果
+  {
+    path: '/fade',
+    name: 'fade',
+    meta: { title: '过渡效果' },
+    component: function (resolve) { require(['@/pages/specialEfficiency/过渡/index.vue'], resolve) }
+  },
+  // 左右滚动效果
+  {
+    path: '/leftrightToScroll',
+    name: 'leftrightToScroll',
+    meta: { title: '左右滚动效果' },
+    component: function (resolve) { require(['@/pages/leftrightToScroll/index1'], resolve) }
+  },
+  // swiper
+  {
+    path: '/swiper',
+    name: 'swiper',
+    meta: { title: 'swiper' },
+    component: function (resolve) { require(['@/pages/swiper/index'], resolve) }
+  },
+  // datav
+  {
+    path: '/flyline',
+    name: 'flyline',
+    meta: { title: '飞线' },
+    component: function (resolve) { require(['@/pages/datav/'], resolve) }
+  },
+  // 左右滑动
+  {
+    path: '/slider',
+    name: 'slider',
+    meta: { title: '左右滑动' },
+    component: function (resolve) { require(['@/pages/slider/'], resolve) }
+  },
 ]
 Vue.use(Router)
 
