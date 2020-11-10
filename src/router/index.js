@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2020-09-14 15:03:15
+ * @LastEditTime: 2020-09-27 15:32:24
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -467,6 +467,13 @@ export const routes = [
     name: 'slider',
     meta: { title: '左右滑动' },
     component: function (resolve) { require(['@/pages/slider/'], resolve) }
+  },
+  // 左右滑动
+  {
+    path: '/antv-g6',
+    name: 'antv-g6',
+    meta: { title: 'antv-g6' },
+    component: function (resolve) { require(['@/pages/antv-g6/'], resolve) }
   },
 ]
 Vue.use(Router)

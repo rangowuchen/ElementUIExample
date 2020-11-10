@@ -13,6 +13,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@antv/g6": "^3.8.0",
     "@jiaminghi/data-view": "^2.9.4",
     "@riophae/vue-treeselect": "0.0.37",
     "crypto": "^1.0.1",
