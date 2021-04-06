@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2020-09-27 15:32:24
+ * @LastEditTime: 2021-04-01 15:22:43
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -474,6 +474,13 @@ export const routes = [
     name: 'antv-g6',
     meta: { title: 'antv-g6' },
     component: function (resolve) { require(['@/pages/antv-g6/'], resolve) }
+  },
+  // 代码高亮
+  {
+    path: '/highlight',
+    name: 'highlight',
+    meta: { title: 'highlight' },
+    component: function (resolve) { require(['@/pages/highlight/'], resolve) }
   },
 ]
 Vue.use(Router)

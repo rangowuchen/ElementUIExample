@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-11-23 11:45:11
  * @LastEditors: wuchen
- * @LastEditTime: 2020-07-24 15:16:54
+ * @LastEditTime: 2021-04-01 15:20:46
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -47,6 +47,17 @@ Vue.use(dataV)
 // 星空连线
 import VueParticles from 'vue-particles'  
 Vue.use(VueParticles)
+
+// 代码高亮
+import hljs from 'highlight.js';
+import 'highlight.js/styles/atom-one-dark.css'	//样式
+// 自定义指令
+Vue.directive('highlight',function (el) {
+  let blocks = el.querySelectorAll('pre code');
+  blocks.forEach((block)=>{
+    hljs.highlightBlock(block)    
+  })
+})
 
 /* eslint-disable no-new */
 new Vue({
