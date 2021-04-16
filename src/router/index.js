@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2021-04-01 15:22:43
+ * @LastEditTime: 2021-04-07 10:43:34
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -168,6 +168,13 @@ export const routes = [
     name: 'map',
     meta: { title: "echarts-地图" },
     component: function (resolve) { require(['@/pages/echarts/map/index.vue'], resolve) },
+  },
+  // 动态折线图
+  {
+    path: '/refreshCharts',
+    name: 'refreshCharts',
+    meta: { title: "echarts-数据刷新效果" },
+    component: function (resolve) { require(['@/pages/echarts/refreshCharts/index.vue'], resolve) },
   },
   // csshake
   {
