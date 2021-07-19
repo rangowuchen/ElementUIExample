@@ -67,7 +67,7 @@ Vue.prototype.$md5 = md5
 import md5 from 'js-md5';  
 使用:this.$md5('123456') // e10adc3949ba59abbe56e057f20f883e  
 
-# 离线使用阿里图标库测试
+# 离线使用阿里图标库
 >1,在iconfont官网中选择自己需要的图标或者项目中ui上传的图标,点击下载到本地,会生成十个文件  
 只需要使用.css,.svg,.eot,.ttf,.woff五个文件,在vue项目中创建文件夹,放入即可     
 >2,在main.js进行全局引入.css文件       

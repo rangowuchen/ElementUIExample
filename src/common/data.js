@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2019-01-30 14:20:37
  * @LastEditors: wuchen
- * @LastEditTime: 2019-03-05 10:57:49
+ * @LastEditTime: 2021-06-29 10:25:07
  * @Description: 公共数据
  * @Email: rangowu@163.com
  */
@@ -57,9 +57,10 @@ var tabList = [{
 }]
 
 // icon图标的class类名
-var iconList = [
-    'address-book','address-book-o','camera-retro','adjust','address-card','address-card-o','anchor','anchor',
-    'balance-scale','bar-chart','bell','briefcase','calendar','cog','globe','heartbeat','paper-plane','university'
+var iconList = ['cw-icon_shijian','cw-icon_biji','cw-icon_shezhi',
+    'cw-icon_bianji','cw-icon_shoucang','cw-icon_wode','cw-icon_paihang','cw-icon_zhishiku',
+    'cw-icon_fasong','cw-icon_yincang','cw-icon_sousuo','cw-icon_fenxiang',
+    'cw-icon_tupian'
 ]
 export default {
 	tabList,iconList

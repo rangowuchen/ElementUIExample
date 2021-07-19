@@ -1,8 +1,18 @@
+/*
+ * @Author: wuchen
+ * @Date: 2018-08-14 10:39:32
+ * @LastEditors: wuchen
+ * @LastEditTime: 2021-04-16 15:27:57
+ * @Description: 
+ * @Email: rangowu@163.com
+ */
 'use strict'
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+// 打包并生成压缩包
+const FileManagerPlugin = require('filemanager-webpack-plugin')
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
@@ -88,5 +98,20 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
-  }
+  },
+  // 打包并生成压缩包配置
+  plugins:[
+    new FileManagerPlugin({
+      events:{
+  　　   onEnd: {
+        　　 delete: [
+            　　  './dist/mydist.zip',
+        　　  ],
+        　　 archive: [
+          　　   {source: './dist', destination: './dist/mydist.zip'},
+          　　]
+    　　 }
+      }
+　　})
+  ]
 }

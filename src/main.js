@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-11-23 11:45:11
  * @LastEditors: wuchen
- * @LastEditTime: 2021-04-01 15:20:46
+ * @LastEditTime: 2021-06-22 17:22:30
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -29,11 +29,6 @@ import echarts from 'echarts'
 import china from 'echarts/map/js/china'
 Vue.prototype.$echarts = echarts
 
-//引入iconfont
-import './assets/iconfont/iconfont.css'
-
-// 引入font-awesome字体图标
-import 'font-awesome/css/font-awesome.css'
 // 权限控制
 import '@/permission.js'
 

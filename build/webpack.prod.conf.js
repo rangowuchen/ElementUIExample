@@ -11,6 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin')//骨架屏
+const FileManagerPlugin = require('filemanager-webpack-plugin');// 打包并生成压缩包
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -126,7 +127,22 @@ const webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+
+    // // 打包并生成压缩包配置
+    // new FileManagerPlugin({
+    //   events:{
+    //     onEnd: {
+    //       　　 delete: [
+    //           　　  './dist/mydist.zip',
+    //       　　  ],
+    //       　　 archive: [
+    //         　　   {source: './dist', destination: './dist/mydist.zip'},
+    //         　　]
+    //   　　 }
+    //   }
+      
+    // })
   ]
 })
 

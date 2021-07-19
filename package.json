@@ -20,6 +20,7 @@
     "d3-tip": "^0.9.1",
     "echarts": "^4.1.0",
     "element-ui": "^2.7.2",
+    "filemanager-webpack-plugin": "^2.0.5",
     "font-awesome": "^4.7.0",
     "highlight.js": "^10.7.1",
     "js-md5": "^0.7.3",
