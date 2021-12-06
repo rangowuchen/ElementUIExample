@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2021-04-07 10:43:34
+ * @LastEditTime: 2021-12-06 16:06:06
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -146,7 +146,7 @@ export const routes = [
     path: '/transfer',
     name: 'transfer',
     meta: { title: "穿梭框" },
-    component: function (resolve) { require(['@/pages/transfer/index.vue'], resolve) },
+    component: function (resolve) { require(['@/pages/transfer/transferTable'], resolve) },
   },
   // 折线图
   {
@@ -488,6 +488,13 @@ export const routes = [
     name: 'highlight',
     meta: { title: 'highlight' },
     component: function (resolve) { require(['@/pages/highlight/'], resolve) }
+  },
+  // 内置组件 component
+  {
+    path: '/component',
+    name: 'component',
+    meta: { title: '内置组件component' },
+    component: function (resolve) { require(['@/pages/component/'], resolve) }
   },
 ]
 Vue.use(Router)
