@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2021-12-06 16:06:06
+ * @LastEditTime: 2021-12-07 15:40:28
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -495,6 +495,13 @@ export const routes = [
     name: 'component',
     meta: { title: '内置组件component' },
     component: function (resolve) { require(['@/pages/component/'], resolve) }
+  },
+  // mixin 混入
+  {
+    path: '/mixin',
+    name: 'mixin',
+    meta: { title: 'mixin混入' },
+    component: function (resolve) { require(['@/pages/mixin/'], resolve) }
   },
 ]
 Vue.use(Router)
