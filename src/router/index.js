@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2021-12-07 15:40:28
+ * @LastEditTime: 2021-12-15 15:39:40
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -502,6 +502,20 @@ export const routes = [
     name: 'mixin',
     meta: { title: 'mixin混入' },
     component: function (resolve) { require(['@/pages/mixin/'], resolve) }
+  },
+  // 公共组件
+  {
+    path: '/components',
+    name: 'components',
+    meta: { title: '公共组件' },
+    component: function (resolve) { require(['@/components/'], resolve) }
+  },
+  // css动画
+  {
+    path: '/css',
+    name: 'css',
+    meta: { title: 'css动画' },
+    component: function (resolve) { require(['@/pages/css/'], resolve) }
   },
 ]
 Vue.use(Router)
