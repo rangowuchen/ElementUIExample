@@ -2,12 +2,12 @@
  * @Author: wuchen
  * @Date: 2021-12-21 10:57:36
  * @LastEditors: wuchen
- * @LastEditTime: 2021-12-21 10:59:34
+ * @LastEditTime: 2021-12-21 14:40:42
  * @Description: 
  * @Email: rangowu@163.com
 -->
 <template>
-  <div>
+  <div class="content">
     <!-- query要用path来引入，params要用name来引入，接收参数都是类似的，
         分别是this.$route.query.name和this.$route.params.name -->
     <div class="routerType">
@@ -48,6 +48,9 @@
 
 </script>
 <style lang="scss" scoped>
+.content {
+  padding: 10px;
+}
   a {
     margin: 10px;
   }

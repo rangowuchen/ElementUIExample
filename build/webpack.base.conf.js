@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2021-04-16 15:27:57
+ * @LastEditTime: 2021-12-21 14:11:40
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -51,10 +51,11 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
-      {  //从这一段上面是默认的！不用改！下面是没有的需要你手动添加，相当于是编译识别sass!
-        test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
-      },
+      // {  //从这一段上面是默认的！不用改！下面是没有的需要你手动添加，相当于是编译识别sass!
+      //如有此报错,注释掉下面即可 relative module was not found:* ./assets/css/test.scss in ./src/main.js
+      //   test: /\.scss$/,
+      //   loaders: ["style", "css", "sass"]
+      // },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
