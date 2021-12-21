@@ -1,73 +1,57 @@
 <!--
  * @Author: wuchen
  * @Date: 2018-08-14 11:18:08
- * @LastEditors  : wuchen
- * @LastEditTime : 2020-01-03 10:58:38
+ * @LastEditors: wuchen
+ * @LastEditTime: 2021-12-21 11:00:24
  * @Description: 
  * @Email: rangowu@163.com
  -->
 /*
- * @Author: wuchen
- * @Date: 2018-09-29 15:53:17
- * @LastEditors: wuchen
- * @LastEditTime: 2018-10-26 09:43:27
- * @Description:首页 
- * @Email: rangowu@163.com
- */
+* @Author: wuchen
+* @Date: 2018-09-29 15:53:17
+* @LastEditors: wuchen
+* @LastEditTime: 2018-10-26 09:43:27
+* @Description:首页
+* @Email: rangowu@163.com
+*/
 
 
 <template>
-    <div>
-        <!-- query要用path来引入，params要用name来引入，接收参数都是类似的，
-        分别是this.$route.query.name和this.$route.params.name -->
-        <div class="routerType">
-          <a @click="routeParams">路由参数params</a>
-          <a @click="routeQuery">路由参数query</a>
-        </div>
-        <div class="sec" v-for="(item,index) in $router.options.routes" v-if="item.meta">
-          {{index=index<10?'0'+index:index}}.<router-link :to="item.path">{{item.meta.title}}</router-link>
-        </div>
-
-    </div>
+  <div>
+    <cw-menu></cw-menu>
+    <cw-content></cw-content>
+  </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {};
-  },
-  methods: {
-    routeParams() {
-      this.$router.push({
-        name: "test",
-        params: {
-          name: "routeParams",
-          code: 101
-        }
-      });
+  import CwMenu from './menu'
+  import CwContent from './content'
+  export default {
+    components: {
+      CwMenu,
+      CwContent
     },
-    routeQuery() {
-      this.$router.push({
-        path: "test",
-        query: {
-          name: "routeQuery",
-          code: 110
-        }
-      });
+    data() {
+      return {};
+    },
+    methods: {
     }
-  }
-};
+  };
+
 </script>
 <style lang="scss" scoped>
-a {
-  margin: 10px;
-}
-.routerType{
-  line-height: 50px;
-}
-.sec{
-  width:25%;
-  float: left;
-  text-align: left;
-}
+  a {
+    margin: 10px;
+  }
+
+  .routerType {
+    line-height: 50px;
+  }
+
+  .sec {
+    width: 25%;
+    float: left;
+    text-align: left;
+  }
+
 </style>
