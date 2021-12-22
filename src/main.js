@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-11-23 11:45:11
  * @LastEditors: wuchen
- * @LastEditTime: 2021-12-21 14:11:58
+ * @LastEditTime: 2021-12-21 17:19:56
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -21,10 +21,8 @@ Vue.config.productionTip = false
 
 // 引入ElementUI
 import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-Vue.use(ElementUI);
-
 import './assets/css/theme.scss';
+Vue.use(ElementUI);
 
 // 自定义组件
 import CwButton from '@/components/Button';

@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2021-12-21 10:57:36
  * @LastEditors: wuchen
- * @LastEditTime: 2021-12-21 14:40:42
+ * @LastEditTime: 2021-12-21 15:25:42
  * @Description: 
  * @Email: rangowu@163.com
 -->
@@ -17,6 +17,7 @@
     <div class="sec" v-for="(item,index) in $router.options.routes" v-if="item.meta">
       {{index=index<10?'0'+index:index}}.<router-link :to="item.path">{{item.meta.title}}</router-link>
     </div>
+    <el-button type="primary">primary</el-button>
   </div>
 </template>
 <script>

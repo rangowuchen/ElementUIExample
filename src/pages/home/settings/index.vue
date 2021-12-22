@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2021-12-21 11:32:13
  * @LastEditors: wuchen
- * @LastEditTime: 2021-12-21 14:42:16
+ * @LastEditTime: 2021-12-22 16:49:49
  * @Description: 
  * @Email: rangowu@163.com
 -->
@@ -26,6 +26,9 @@
           label: '黑色主题'
         }, ]
       };
+    },
+    mounted () {
+      document.getElementsByTagName('body')[0].className = this.currentTheme;
     },
     methods: {
       changeTheme() {
