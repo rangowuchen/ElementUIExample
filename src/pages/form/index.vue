@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2020-06-24 17:55:48
  * @LastEditors: wuchen
- * @LastEditTime: 2020-06-29 14:08:22
+ * @LastEditTime: 2022-06-06 18:50:04
  * @Description: 
  * @Email: rangowu@163.com
 --> 
@@ -80,9 +80,24 @@
                 <el-button @click="resetForm('ruleForm')">重置</el-button>
             </el-form-item>
         </el-form>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <el-form :model="formObj" :rules="formRules" ref="formObj" label-width="100px" label-position="right">
+            <el-form-item style="width:96%" label="手机号" prop="phone">
+                <el-input v-model="formObj.phone" palceholder="请输入手机号"></el-input>
+            </el-form-item>
+            <el-form-item label="甜品">
+                <dynamic :dynamicData='dynamicData' :timestamp='timestamp' @dynamicFormChange="dynamicFormChange"></dynamic>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="submitForm1('formObj')">提交</el-button>
+            </el-form-item>
+        </el-form>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
     </div>
 </template>
 <script>
+import Dynamic from './components/dynamic.vue'
     export default {
         data() {
             const aa  = (rule,value,callback) => {
@@ -152,8 +167,28 @@
                     test1:[{validator:dd,trigger: ["blur", "change"]}],
                     test2:[{validator:ee,trigger: ["blur", "change"]}],
                     test3:[{validator:ff,trigger: ["blur", "change"]}],
-                }
+                },
+
+                dynamicData: {
+                    domains: [{
+                        type: '',
+                        key: '',
+                        value: ''
+                    }]
+                },
+                timestamp: '',
+                formResult: [],
+                formObj: {
+                    phone: ''
+                },
+                formRules: {
+                    phone:[{required: true, message: '请输入手机号', trigger: 'blur'},
+                        { pattern: /^1[34578]\d{9}$/, message: '目前只支持中国大陆的手机号码' }]
+                },
             };
+        },
+        components: {
+            Dynamic
         },
         computed: {
             isRequired1(){
@@ -188,6 +223,33 @@
             },
             resetForm(formName) {
                 this.$refs[formName].resetFields();
+            },
+
+            // 动态表单
+            submitForm1(formName) {
+                this.timestamp = Date.now().toString();
+                this.$nextTick(() => {
+                    this.$refs[formName].validate(valid => {
+                        if (valid) {
+                            if(!this.formResult) {
+                                return
+                            }
+                            // 传给后端的值
+                            let params = {
+                                ...this.formObj,
+                                'formdata': this.formResult
+                            }
+                            console.log('传给后端的值---',params)
+                        } else {
+                            console.log("error submit!!");
+                            return false;
+                        }
+                    });
+                })
+            },
+            dynamicFormChange(data) {
+                this.formResult = data;
+                console.log('子组件传来的值',data)
             }
         }
     };
