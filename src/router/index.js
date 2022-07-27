@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2021-12-15 15:39:40
+ * @LastEditTime: 2022-07-26 15:56:04
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -516,6 +516,20 @@ export const routes = [
     name: 'css',
     meta: { title: 'css动画' },
     component: function (resolve) { require(['@/pages/css/'], resolve) }
+  },
+  // css动画
+  {
+    path: '/css',
+    name: 'css',
+    meta: { title: 'css动画' },
+    component: function (resolve) { require(['@/pages/css/'], resolve) }
+  },
+  // 插槽
+  {
+    path: '/slot',
+    name: 'slot',
+    meta: { title: '插槽' },
+    component: function (resolve) { require(['@/pages/slot/'], resolve) }
   },
 ]
 Vue.use(Router)
