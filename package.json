@@ -34,6 +34,7 @@
     "vue-qr": "^2.1.0",
     "vue-router": "^3.0.1",
     "vue-skeleton-webpack-plugin": "^1.2.2",
+    "vue-virtual-scroll-list": "^2.3.3",
     "vue-worker": "^1.2.1",
     "vuex": "^3.0.1",
     "worker-loader": "^2.0.0"

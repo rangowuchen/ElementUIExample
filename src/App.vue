@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2021-06-22 17:22:46
+ * @LastEditTime: 2022-08-03 10:16:22
  * @Description: 
  * @Email: rangowu@163.com
  -->
@@ -32,6 +32,23 @@ html,body,#app{
   text-align: center;
   color: #2c3e50;
   /* margin-top: 60px; */
+}
+
+// 美化滚顶条
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,.1);
+  border-radius: 0;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(0,0,0,.15);
+  transition: color .2s ease;
 }
 
 /* 引入iconfont,去掉iconfont类 */
