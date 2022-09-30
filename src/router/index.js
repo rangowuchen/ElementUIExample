@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2022-08-06 10:56:51
+ * @LastEditTime: 2022-09-28 14:27:05
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -538,27 +538,19 @@ export const routes = [
     meta: { title: '大量数据处理' },
     component: function (resolve) { require(['@/pages/bigData/'], resolve) }
   },
-  // // 颜色选择器
-  // {
-  //   path: '/colorPicker',
-  //   name: 'colorPicker',
-  //   meta: { title: '颜色选择器' },
-  //   component: function (resolve) { require(['@/pages/colorPicker/'], resolve) }
-  // },
-  // // 滑块
-  // {
-  //   path: '/sliderColor',
-  //   name: 'sliderColor',
-  //   meta: { title: '滑块颜色' },
-  //   component: function (resolve) { require(['@/pages/colorPicker/slider.vue'], resolve) }
-  // },
-  // // 拖拽
-  // {
-  //   path: '/drag',
-  //   name: 'drag',
-  //   meta: { title: '拖拽' },
-  //   component: function (resolve) { require(['@/pages/drag/'], resolve) }
-  // },
+  // 拖拽
+  {
+    path: '/elementPosition',
+    name: 'elementPosition',
+    meta: { title: '元素位置' },
+    component: function (resolve) { require(['@/pages/drag/elementPosition'], resolve) }
+  },
+  {
+    path: '/drag',
+    name: 'drag',
+    meta: { title: '拖拽' },
+    component: function (resolve) { require(['@/pages/drag/'], resolve) }
+  },
 ]
 Vue.use(Router)
 
