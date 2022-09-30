@@ -13,7 +13,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "@antv/g6": "^3.8.0",
+    "@antv/g6": "^4.7.4",
     "@jiaminghi/data-view": "^2.9.4",
     "@riophae/vue-treeselect": "0.0.37",
     "crypto": "^1.0.1",
@@ -59,7 +59,7 @@
     "cross-spawn": "^5.0.1",
     "crypto-js": "^3.1.9-1",
     "css-loader": "^0.28.0",
-    "d3": "^5.7.0",
+    "d3": "^7.6.1",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "font-awesome": "^4.7.0",
