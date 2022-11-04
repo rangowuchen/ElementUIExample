@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 11:18:08
  * @LastEditors: wuchen
- * @LastEditTime: 2021-12-21 14:42:45
+ * @LastEditTime: 2022-11-04 18:16:43
  * @Description: 
  * @Email: rangowu@163.com
  -->
@@ -22,6 +22,7 @@
     <div class="contain-right">
       <cw-settings></cw-settings>
       <cw-content class="cw-content"></cw-content>
+      <router-view></router-view>
     </div>
   </div>
 </template>

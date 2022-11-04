@@ -2,23 +2,23 @@
  * @Author: wuchen
  * @Date: 2022-11-03 14:37:48
  * @LastEditors: wuchen
- * @LastEditTime: 2022-11-04 14:41:47
+ * @LastEditTime: 2022-11-04 18:18:07
  * @Description: 
  * @Email: rangowu@163.com
 -->
 <template>
-  <div class="contain">
-    <div class="contain-img" v-for="(item,index) in imageList" :key="item">
+  <div class="canvas">
+    <div class="canvas-img" v-for="(item,index) in imageList" :key="item">
       <div>
         <img :src="item" alt="">
-        <span class="contain-img-hover">
+        <span class="canvas-img-hover">
           <i class="el-icon-zoom-in" @click="handleView(item)"></i>
           <i class="el-icon-delete" @click="handleDel(index)"></i>
         </span>
       </div>
     </div>
-    <label class="contain-label">
-      <input class="contain-label-input" type="file" @change="inputChange($event)">
+    <label class="canvas-label">
+      <input class="canvas-label-input" type="file" @change="inputChange($event)">
       <div class="upload"></div>
     </label>
     <el-dialog :visible.sync="dialogVisible">
@@ -127,7 +127,7 @@
 
 </script>
 <style lang="scss" scoped>
-  .contain {
+  .canvas {
     padding: 10px;
     text-align: left;
 
