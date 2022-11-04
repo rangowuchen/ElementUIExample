@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 10:39:32
  * @LastEditors: wuchen
- * @LastEditTime: 2022-09-28 14:27:05
+ * @LastEditTime: 2022-11-03 14:48:42
  * @Description: 
  * @Email: rangowu@163.com
  */
@@ -550,6 +550,12 @@ export const routes = [
     name: 'drag',
     meta: { title: '拖拽' },
     component: function (resolve) { require(['@/pages/drag/'], resolve) }
+  },
+  {
+    path: '/canvas/compress',
+    name: 'compress',
+    meta: { title: 'canvas图片压缩' },
+    component: function (resolve) { require(['@/pages/canvas/compress.vue'], resolve) }
   },
 ]
 Vue.use(Router)
