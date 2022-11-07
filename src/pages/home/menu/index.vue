@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2021-12-21 10:49:56
  * @LastEditors: wuchen
- * @LastEditTime: 2022-11-04 17:21:10
+ * @LastEditTime: 2022-11-07 16:23:45
  * @Description: 
  * @Email: rangowu@163.com
 -->
@@ -13,7 +13,7 @@
       <el-radio-button :label="true">收起</el-radio-button>
     </el-radio-group> -->
     <el-scrollbar class="scrollbar-contain">
-      <el-menu :router="true" :default-active="defaultActive" text-color="#fff" active-text-color="#666"
+      <el-menu class="menu-contain" :router="true" :default-active="defaultActive" text-color="#fff" active-text-color="#666"
         :collapse="isCollapse">
         <el-submenu v-for="item in $router.options.routes" :key="item.path" :index="item.path">
           <template slot="title">
@@ -57,10 +57,22 @@
     /deep/ .el-scrollbar__wrap{
       overflow-x: hidden;
     }
+    text-align: left;
   }
   .el-menu-vertical-demo:not(.el-menu--collapse) {
     width: 200px;
     height: 100%;
+  }
+  .menu-contain {
+    width: 100%;
+    height: 100%;
+
+    /deep/ .el-submenu__title:hover {
+      background-color: #436b94!important;
+    }
+    .el-menu-item:hover {
+      background-color: #436b94!important;
+    }
   }
 
 </style>

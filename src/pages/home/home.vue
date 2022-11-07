@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2018-08-14 11:18:08
  * @LastEditors: wuchen
- * @LastEditTime: 2022-11-04 18:16:43
+ * @LastEditTime: 2022-11-07 17:17:29
  * @Description: 
  * @Email: rangowu@163.com
  -->
@@ -55,7 +55,7 @@
 
     .contain-right {
       width: calc(100% - 200px);
-
+      overflow-y: scroll;
       .cw-content {
         // padding-top: 54px;
         // background: #fff;

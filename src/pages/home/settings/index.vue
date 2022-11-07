@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2021-12-21 11:32:13
  * @LastEditors: wuchen
- * @LastEditTime: 2021-12-22 16:49:49
+ * @LastEditTime: 2022-11-07 16:52:28
  * @Description: 
  * @Email: rangowu@163.com
 -->
@@ -17,7 +17,7 @@
   export default {
     data() {
       return {
-        currentTheme: 'blueTheme',
+        currentTheme: 'blackTheme',
         options: [{
           value: 'blueTheme',
           label: '蓝色主题'

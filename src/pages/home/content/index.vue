@@ -2,7 +2,7 @@
  * @Author: wuchen
  * @Date: 2021-12-21 10:57:36
  * @LastEditors: wuchen
- * @LastEditTime: 2021-12-21 15:25:42
+ * @LastEditTime: 2022-11-07 17:17:34
  * @Description: 
  * @Email: rangowu@163.com
 -->
@@ -14,10 +14,6 @@
       <a @click="routeParams">路由参数params</a>
       <a @click="routeQuery">路由参数query</a>
     </div>
-    <div class="sec" v-for="(item,index) in $router.options.routes" v-if="item.meta">
-      {{index=index<10?'0'+index:index}}.<router-link :to="item.path">{{item.meta.title}}</router-link>
-    </div>
-    <el-button type="primary">primary</el-button>
   </div>
 </template>
 <script>
