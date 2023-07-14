@@ -14,12 +14,14 @@ import treeRouter from './modules/tree'
 import animateRouter from './modules/animate'
 import canvasRouter from './modules/canvas'
 import vuesRouter from './modules/vues'
+import components from './modules/components'
 export const routes = [
   treeRouter,
   chartsRouter,
   animateRouter,
   canvasRouter,
   vuesRouter,
+  components,
   {
     path: '/',
     component: Home,
